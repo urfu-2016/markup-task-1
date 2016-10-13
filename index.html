@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link href="index.css" rel="stylesheet">
-<title>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ
+<title>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ И УЛУЧШАЕМ СКОРОСТЬ ЗАГРУЗКИ
 </title>
 </head>
 <body>
@@ -61,7 +61,7 @@ this.timings['look-ma-finish'] = Date.now();
 а все вычисления производятся в конце:</p>
 var totalTime = this.timings['look-ma-finish'] - <br>this.timings['look-ma-im-start'];
 <p>И на сервер прилетают подобные записи:</p>
-serverResponse=50&domUpdate=60
+<pre>serverResponse=50&domUpdate=60</pre>
 <h3>Как мы ускоряем</h3>
 <p>Чтобы снизить время загрузки почты при выходе новых версий,
 мы уже делаем следующее:</p>
@@ -127,8 +127,10 @@ google diff     | 1363          | 76
 <br>k = 0
 <br>while&#124;&#124;&#8711;&#402;<sub>k</sub>&#124;&#124; &#62; &#949;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;найти направление p<sub>k</sub> = -C<sub>k</sub>&#8711;&#402;<sub>k</sub>
-<br>&nbsp;&nbsp;&nbsp;&nbsp;вычислить x<sub>k+1</sub> = x<sub>k</sub> + &#945;<sub>k</sub>p<sub>k</sub>, &#945;<sub>k</sub> удовлетворяет условиям Вольфея
-<br>&nbsp;&nbsp;&nbsp;&nbsp;обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> = &#8711;&#402;<sub>k+1</sub> - &#8711;&#402;<sub>k</sub>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;вычислить x<sub>k+1</sub> = x<sub>k</sub> + &#945;<sub>k</sub>p<sub>k</sub>,
+&#945;<sub>k</sub> удовлетворяет условиям Вольфея
+<br>&nbsp;&nbsp;&nbsp;&nbsp;обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> =
+&#8711;&#402;<sub>k+1</sub> - &#8711;&#402;<sub>k</sub>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;вычислить C<sub>k+1</sub>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;k = k + 1
 <br>end
@@ -166,20 +168,23 @@ md5 - 128-битный алгоритм хеширования. Предназн
 <p>- JIguse (mrawesome@yandex.ru) 29 ноября 2014 в 21:30</p>
 </div>
 <div class="comm-desc">
-<p>  Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми подробностями о внутренней работе сервисов.</p>
+<p>  Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми подробностями о 
+внутренней работе сервисов.</p>
 </div>
 <div class="comm-title">
 <p>- Brister (brist89@yandex-team.ru) 24 ноября 2014 в 13:13</p>
 </div>
 <div class="comm-desc">
 <p>  (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).</p>
-<p>  Получается значение от нуля до единицы, которое, видимо, лучше всего показывает, хорошо или плохо работает почта, наверное все-таки от 0.5 до 1</p>
+<p>  Получается значение от нуля до единицы, которое, видимо, лучше всего показывает, хорошо или 
+плохо работает почта, наверное все-таки от 0.5 до 1</p>
 </div>
 <div class="comm-title">
 <p>- alexeimois (test@yandex.ru) 22 ноября 2014 в 17:35</p>
 </div>
 <div class="comm-desc">
-<p>  Мы измеряем скорость загрузки с помощью Яндекс.Метрики: help.yandex.ru/metrika/reports/monitoring_timing.xml</p>
+<p>  Мы измеряем скорость загрузки с помощью Яндекс.Метрики: 
+help.yandex.ru/metrika/reports/monitoring_timing.xml</p>
 </div>
 </div>
 <br>© <span class="ya">Я</span>ндекс, <ins>help@yandex.ru</ins>, Хохрякова, 10.
