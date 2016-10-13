@@ -4,6 +4,16 @@ table
     border-spacing: 0;
 }
 
+dd
+{
+    font-style: italic;
+}
+
+dt
+{
+    margin-top: 1em;
+}
+
 span
 {
     padding-left: 40px;
