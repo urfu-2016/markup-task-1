@@ -1,0 +1,49 @@
+table
+{
+    border: 2px double black;
+    border-spacing: 0;
+}
+
+dd
+{
+    font-style: italic;
+}
+
+dt
+{
+    margin-top: 1em;
+}
+
+span
+{
+    padding-left: 40px;
+    font-family: cursive;
+}
+
+.b
+{
+    font-family: cursive;
+}
+
+.i
+{
+    font-style: italic;
+}
+
+h5
+{
+    text-align: right;
+}
+
+img
+{
+    width: 40%;
+    height: 40%;
+}
+
+tr,
+td
+{
+    border: 1px double black;
+    text-align: center;
+}
