@@ -144,19 +144,20 @@
     </p>
     Формат файла с патчами для проекта выглядит так:
     <code>
-        <br>
-        [<br>
-        &nbsp;&nbsp;&nbsp;    {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "k": "jane.css",<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "p": [patch],<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "s": 4554<br>
-        &nbsp;&nbsp;&nbsp;    },<br>
-        &nbsp;&nbsp;&nbsp;    {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "k": "jane.css",<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "p": [patch],<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        "s": 4554<br>
-        &nbsp;&nbsp;&nbsp;    }<br>
-        ]<br>
+        <pre>
+    [
+        {
+            "k": "jane.css",
+            "p": [patch],
+            "s": 4554
+        },
+        {
+            "k": "jane.css",
+            "p": [patch],
+            "s": 4554
+        }
+    ]
+        </pre>
     </code>
 
     То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
