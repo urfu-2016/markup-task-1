@@ -1,0 +1,63 @@
+p
+{
+    text-indent: 20px; /* абзацный отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+.padd
+{
+    /* padding-left: 20px; */
+    background: #fff;
+    padding: 20px; /* Поля вокруг текста */
+}
+
+.ya
+{
+    color: red;
+}
+
+body
+{
+    margin-right: 15%; /* Отступ справа */
+    margin-left: 15%; /* Отступ слева */
+}
+
+.panel
+{
+    padding: 30px; /* Поля вокруг текста */
+    background: #f4f1f1;
+}
+
+.comments
+{
+    padding: 5px; /* Поля вокруг текста */
+    background: #fbeff2;
+}
+
+.comm-title
+{
+    font-weight: bold;
+}
+
+.comm-desc
+{
+    font-style: italic;
+}
+
+table
+{
+    width: 100%;
+}
+
+table,
+tr,
+td
+{
+    border: 1px solid grey;
+}
+
+td
+{
+    padding: 10px;
+    width: 50%;
+}
