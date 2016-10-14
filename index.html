@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Блог компании яндекс</title>
 </head>
 <body>
     <header>
-            <h1 align="center" style="color:red;">Блог компании яндекс</h1>
+            <h1>Блог компании яндекс</h1>
     </header>
     <main>
         <article>
-            <h2 style="color:blue">ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
+            <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
             <p>
                 Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
                 какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -20,7 +18,7 @@
                 иногда — исправляем ошибки, а это значит, у нас постоянно появляются новый код
                 и новая логика. Всё это напрямую влияет на скорость работы интерфейса.
             </p>
-            <h2 style="color:blue">Что мы измеряем</h2>
+            <h2>Что мы измеряем</h2>
             <h3>Этапы первой загрузки:</h3>
             <ul>
                 <li>подготовка;</li>
@@ -60,12 +58,12 @@
                 но уже не настолько счастлив. И применяем формулу:
             </p>
             <p>
-                <b>(<var>кол-во счастливых пользователей</var> + <var>кол-во удовлетворенных</var> / 2)
-                / (<var>кол-во всех</var>).</b><br>
+                (<var>кол-во счастливых пользователей</var> + <var>кол-во удовлетворенных</var> / 2)
+                / (<var>кол-во всех</var>).<br>
                 Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
                 хорошо или плохо работает почта.
             </p>
-            <h2 style="color:blue">Как мы измеряем</h2>
+            <h2>Как мы измеряем</h2>
             <p>
                 Сейчас модуль обновления сам логирует все свои стадии, и можно легко понять
                 причину замедления: медленнее стал отвечать сервер либо слишком долго
@@ -97,11 +95,11 @@
             <p>
                 <pre>
                     <samp>
-                        serverResponse=50&domUpdate=60
+                        serverResponse=50&#38;domUpdate=60
                     </samp>
                 </pre>
             </p>
-            <h2 style="color:blue">Как мы ускоряем</h2>
+            <h2>Как мы ускоряем</h2>
             <p>
                 Чтобы снизить время загрузки почты при выходе новых версий, мы уже делаем следующее:
             </p>
@@ -133,24 +131,24 @@
             <p>
                 Для окончательного выбора библиотеки нам нужно сравнить:
             </p>
-            <table style="border-collapse:collapse">
+            <table>
                 <thead>
                     <tr>
-                        <th style="padding:4px; border: 1px solid black;"><em>Библиотека</em></th>
-                        <th style="padding:4px; border: 1px solid black;"><em>IE 9</em></th>
-                        <th style="padding:4px; border: 1px solid black;"><em>Opera 12</em></th>
+                        <th><em>Библиотека</em></th>
+                        <th><em>IE 9</em></th>
+                        <th><em>Opera 12</em></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding:4px; border: 1px solid black;">vcdiff</td>
-                        <td style="padding:4px; border: 1px solid black;">8</td>
-                        <td style="padding:4px; border: 1px solid black;">5</td>
+                        <td>vcdiff</td>
+                        <td>8</td>
+                        <td>5</td>
                     </tr>
                     <tr>
-                        <td style="padding:4px; border: 1px solid black;">google diff</td>
-                        <td style="padding:4px; border: 1px solid black;">1363</td>
-                        <td style="padding:4px; border: 1px solid black;">76</td>
+                        <td>google diff</td>
+                        <td>1363</td>
+                        <td>76</td>
                     </tr>
                 </tbody>
             </table>
@@ -181,8 +179,8 @@
             </p>
             <p>
                 То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
-                каждого объекта есть три свойства. <b>k</b> — названия ключа в localStorage для этого
-                ресурса. <b>p</b> — патч для ресурса, который сгенерировал vcdiff. <b>s</b> — чексумма для
+                каждого объекта есть три свойства. k — названия ключа в localStorage для этого
+                ресурса. p — патч для ресурса, который сгенерировал vcdiff. s — чексумма для
                 ресурса актуальной версии, чтобы потом можно было проверить правильность
                 наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
             </p>
@@ -192,11 +190,11 @@
                 нахождения локального максимума/минимума нелинейного функционала
                 без ограничений.
             </p>
-            <p style="margin-left:5%; font-size: large">
-                <b>Дано</b> <var>&#949;</var>, <var>x<sub>0</sub></var><br>
-                <b>Инициализировать</b> <var>H<sub>0</sub></var><br>
+            <p>
+                Дано <var>&#949;</var>, <var>x<sub>0</sub></var><br>
+                Инициализировать <var>H<sub>0</sub></var><br>
                 <var>k</var> = 0<br>
-                <b><code>while</code></b> ||&#8711;<var>f<sub>k</sub></var>|| > <var>&#949;</var><br>
+                <code>while</code> ||&#8711;<var>f<sub>k</sub></var>|| &#62; <var>&#949;</var><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> =
                 -<var>C<sub>k</sub></var>&#8711;<var>f<sub>k</sub></var><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> +
@@ -207,44 +205,44 @@
                 &#8711;<var>f<sub>k+1</sub></var> - &#8711;<var>f<sub>k</sub></var><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;<var>k</var> = <var>k</var> + 1<br>
-                <b><code>end</code></b>
+                <code>end</code>
             </p>
             <p>
                 Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br><br>
-                <b><dfn>CRC16/32</dfn></b> - алгоритм нахождения контрольной суммы, предназначенный
+                <dfn>CRC16/32</dfn> - алгоритм нахождения контрольной суммы, предназначенный
                 для проверки целостности данных<br>
-                <b><dfn>md5</dfn></b> - 128-битный алгоритм хеширования. Предназначен для создания
+                <dfn>md5</dfn> - 128-битный алгоритм хеширования. Предназначен для создания
                 «отпечатков» или дайджестов сообщения произвольной длины и последующей проверки
                 их подлинности.
             </p>
             <p>
                 Потому что он быстрый, компактный и легок в реализации.
             </p>
-            <h2 style="color:blue">Итог</h2>
+            <h2>Итог</h2>
             <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
-            <table style="border-collapse:collapse">
+            <table>
                 <thead>
                     <tr>
-                        <th style="padding:4px; border: 1px solid black;"><em>Релиз</em></th>
-                        <th style="padding:4px; border: 1px solid black;"><em>С патчем</em></th>
-                        <th style="padding:4px; border: 1px solid black;"><em>Без патча</em></th>
+                        <th><em>Релиз</em></th>
+                        <th><em>С патчем</em></th>
+                        <th><em>Без патча</em></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding:4px; border: 1px solid black;">7.7.20</td>
-                        <td style="padding:4px; border: 1px solid black;">397</td>
-                        <td style="padding:4px; border: 1px solid black;">174 549</td>
+                        <td>7.7.20</td>
+                        <td>397</td>
+                        <td>174 549</td>
                     </tr>
                     <tr>
-                        <td style="padding:4px; border: 1px solid black;">7.7.21</td>
-                        <td style="padding:4px; border: 1px solid black;">383</td>
-                        <td style="padding:4px; border: 1px solid black;">53 995</td>
+                        <td>7.7.21</td>
+                        <td>383</td>
+                        <td>53 995</td>
                     </tr>
                     <tr>
-                        <td style="padding:4px; border: 1px solid black;">7.7.22</td>
-                        <td style="padding:4px; border: 1px solid black;">483</td>
-                        <td style="padding:4px; border: 1px solid black;">3 995</td>
+                        <td>7.7.22</td>
+                        <td>483</td>
+                        <td>3 995</td>
                     </tr>
                 </tbody>
             </table>
@@ -257,24 +255,24 @@
             </address>
         </article>
         <section>
-            <h3 style="color:green">Комментарии (3):</h3>
+            <h3>Комментарии (3):</h3>
             <article>
-                <p style="font-size: large; font-weight: bold">
+                <p>
                     - Mogaika <a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>
                     <time>30 ноября 2014 в 17:05</time>
                 </p>
-                <div style="margin-left:5%">
+                <div>
                     <p>
                         А можете привести сравнение, на сколько быстрее грузится lite версия?
                     </p>
                 </div>
             </article>
             <article>
-                <p style="font-size: large; font-weight: bold">
+                <p>
                     - JIguse <a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>
                     <time>29 ноября 2014 в 21:30</time>
                 </p>
-                <div style="margin-left:5%">
+                <div>
                     <p>
                         Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
                         подробностями о внутренней работе сервисов.
@@ -282,11 +280,11 @@
                 </div>
             </article>
             <article>
-                <p style="font-size: large; font-weight: bold">
+                <p>
                     - Brister <a href="mailto:brist89@yandex-team.ru">mogaika@yandex-team.ru</a>
                     <time>24 ноября 2014 в 13:13</time>
                 </p>
-                <div style="margin-left:5%">
+                <div>
                     <p>
                         (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
                         Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
@@ -298,11 +296,11 @@
                 </div>
             </article>
             <article>
-                <p style="font-size: large; font-weight: bold">
+                <p>
                     - alexeimois <a href="mailto:test@yandex.ru">test@yandex.ru</a>
                     <time>22 ноября 2014 в 17:35</time>
                 </p>
-                <div style="margin-left:5%">
+                <div>
                     <p>
                         Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
                         <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">
@@ -316,11 +314,8 @@
     <footer>
         <hr>
         <address>
-        <p style="margin-left:3%">
-            © <span style="color: red;">Я</span>ндекс,
-            <a href="mailto:help@yandex.ru">
-                help@yandex.ru
-            </a>, Хохрякова, 10
+        <p>
+            © Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10
         </p>
         </address>
     </footer>
