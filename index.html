@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
     <title>Блог компании Яндекс.</title>
+    <meta charset="utf-8">
 </head>
 <body>
     <header>
-        <h1><span style="color: red;">Я</span>НДЕКС.ПОЧТА:</h1>
+        <h1>ЯНДЕКС.ПОЧТА:</h1>
         <h2>КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
     </header>
     <main>
@@ -59,29 +59,23 @@
                 <p>Сейчас модуль обновления сам логирует все свои стадии, и можно легко понять
                 причину замедления: медленнее стал отвечать сервер либо слишком долго
                 выполняется JavaScript. Выглядит это примерно так:</p>
-                <figure>
-                    <pre>
-                        <code>
-                            this.timings['look-ma-im-start'] = Date.now();
-                            this.timings['look-ma-finish'] = Date.now();
-                        </code>
-                    </pre>
-                </figure>
+                <pre>
+                    <code>
+                        this.timings['look-ma-im-start'] = Date.now();
+                        this.timings['look-ma-finish'] = Date.now();
+                    </code>
+                </pre>
                 <p>C помощью <em>Date.now()</em> мы получаем текущее время. Все тайминги собираются и при
                 отправке рассчитываются. На этапах разница между “end” и “start” не считается,
                 а все вычисления производятся в конце:</p>
-                <figure>
-                    <pre>
-                        <code>
-                            var totalTime =
-                            this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];
-                        </code>
-                    </pre>
-                </figure>
+                <pre>
+                    <code>
+                        var totalTime =
+                        this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];
+                    </code>
+                </pre>
                 <p>И на сервер прилетают подобные записи:</p>
-                <figure>
-                        <samp>serverResponse=50&domUpdate=60</samp>
-                </figure>
+                <samp>serverResponse=50&domUpdate=60</samp>
             </section>
             <section>
                 <h3>Как мы ускоряем</h3>
@@ -107,7 +101,7 @@
                 - google-diff-patch-match
                 </pre>
                 <p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <td>Библиотека</td>
@@ -158,25 +152,23 @@
                 — итерационный метод численной оптимизации, предназначенный для
                 нахождения локального максимума/минимума нелинейного функционала
                 без ограничений.</p>
-                <pre>
-                    <code>
-                        дано <var>&epsilon;</var>, <var>x</var><sub>0</sub>
-                        инициализировать <var>H</var><sub>0</sub>
-                        <var>k</var> = 0
-                        <strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| > <var>&epsilon;</var>
-                        &nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> =
-                        -<var>C<sub>k</sub>&nabla;f<sub>k</sub></var>
-                        &nbsp;&nbsp;вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> +
-                        &alpha;<sub>k</sub>p<sub>k</sub>,
-                        &alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе
-                        &nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> -
-                        x<sub>k</sub></var> и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> -
-                        &nabla;f<sub>k</sub></var>
-                        &nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var>
-                        &nbsp;&nbsp; <var>k = k + 1</var>
-                        <strong>end</strong>
-                    </code>
-                </pre>
+                <code>
+                    дано <var>&epsilon;</var>, <var>x</var><sub>0</sub><br>
+                    инициализировать <var>H</var><sub>0</sub><br>
+                    <var>k</var> = 0<br>
+                    <strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| > <var>&epsilon;</var><br>
+                    &nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> =
+                    -<var>C<sub>k</sub>&nabla;f<sub>k</sub></var><br>
+                    &nbsp;&nbsp;вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> +
+                    &alpha;<sub>k</sub>p<sub>k</sub>,
+                    &alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
+                    &nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> -
+                    x<sub>k</sub></var> и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> -
+                    &nabla;f<sub>k</sub></var><br>
+                    &nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
+                    &nbsp;&nbsp;<var>k = k + 1</var><br>
+                    <strong>end</strong><br>
+                </code>
                 <p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</p>
                 <ul>
                     <li>
@@ -194,7 +186,7 @@
             <section>
                 <h3>Итог</h3>
                 <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <td>Релиз</td>
@@ -259,10 +251,10 @@
         </article>
     </main>
     <footer>
-         <address>
-            &copy; <span style="color: red;">Я</span>ндекс,
+        <address>
+            &copy; Яндекс,
             <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10
-         </address>
+        </address>
     </footer>
 </body>
 </html>
