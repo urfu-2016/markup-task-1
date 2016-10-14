@@ -1,0 +1,22 @@
+body,
+thead,
+tbody 
+{
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+
+footer 
+{
+    text-align: right;
+}
+
+tbody 
+{
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+}
