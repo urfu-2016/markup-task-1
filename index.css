@@ -1,0 +1,53 @@
+h1
+{
+    text-align: center;
+}
+
+h4
+{
+    color: blue;
+}
+
+dt
+{
+    font-family: italic;
+}
+
+p.formula
+{
+    background: #e6e6fa;
+}
+
+mark.shading
+{
+    background: #ffec82;
+    padding: 0 3px;
+}
+
+mark.fatty
+{
+    font-weight: 600;
+}
+
+abbr
+{
+    font-weight: bold;
+}
+
+ul.comment
+{
+    list-style-type: none;
+    color: black;
+}
+
+p.header
+{
+    color: #4169e1;
+    font-size: 105%;
+    padding-left: 5%;
+}
+
+span
+{
+    font-family: monospace;
+}
