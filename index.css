@@ -43,3 +43,19 @@ body
 {
     font-style: italic;
 }
+
+table
+{
+    width: 100%;
+}
+
+table, tr, td
+{
+    border: 1px solid grey;
+}
+
+td
+{
+    padding: 10px;
+	width: 50%;
+}
