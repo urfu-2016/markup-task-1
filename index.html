@@ -3,6 +3,18 @@
 <head>
     <meta charset="utf-8">
 	<title>Блог компании Яндекс</title>
+	<style type="text/css">
+		.list
+		{
+			list-style: none;
+		}
+		.list li:before
+		{
+			content:  "—";
+			position: relative;
+			left:     -5px;
+		}
+	</style>
 </head>
 <body>
     <header><h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1></header>
@@ -113,7 +125,7 @@
                 начали искать реализации <em>diff</em> на JS. На популярных хостингах кода нашли
                 библиотеки:
             </p>
-            <ul type="-">
+            <ul class="list">
                 <li>VCDiff</li>
                 <li>google-diff-patch-match</li>
             </ul>
@@ -122,9 +134,11 @@
             </p>
             <table>
                 <thead>
-                    <td>Библиотека </td>
-                    <td>IE 9</td>
-                    <td>Opera 12</td>
+					<tr>
+						<td>Библиотека </td>
+						<td>IE 9</td>
+						<td>Opera 12</td>
+					</tr>
                 </thead>
                 <tr>
                     <td>vcdiff</td>
@@ -203,9 +217,11 @@
             </p>
             <table>
                 <thead>
-                    <td>Релиз</td>
-                    <td>С патчем</td>
-                    <td>Без патча</td>
+					<tr>
+						<td>Релиз</td>
+						<td>С патчем</td>
+						<td>Без патча</td>
+					</tr>
                 </thead>
                 <tr>
                     <td>7.7.20 </td>
@@ -230,7 +246,7 @@
                 Компания: <span itemprop="affiliation">Яндекс</span><br>
             </section>
             <section>
-                <h1>Комментарии (3):</h1>
+                <h2>Комментарии (3):</h2>
                 <article>
                     <address>Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>)</address> 30 ноября 2014 в 17:05
                     <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
@@ -257,7 +273,7 @@
                 </article>
             </section>
         </section>
-        <footer>&cope; Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10</footer>
+        <footer>&copy; Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10</footer>
     </main>
 </body>
 </html>
