@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+        <title>Блог компании Яндекс.</title>
     </head>
     <body>
         <header>
@@ -9,9 +10,8 @@
         </header>
         <main>
             <section>
+                <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
                 <article>
-                    <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
-
                     <p>
                         Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
                         какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -40,7 +40,8 @@
                     </ul>
 
                     <p>
-                        — <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы<br>
+                        — <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q>
+                         - говорим мы<br>
                         — <q>Что же дальше?</q> - вопрошаете вы<br>
                         — <q>А давай построим график!</q> - отвечаем мы<br>
                         — <q>А что будем считать?</q> - уточняете вы<br>
@@ -89,7 +90,10 @@
                         а все вычисления производятся в конце:
                     </p>
 
-                    <code>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
+                    <code>
+                        var totalTime = this.timings['look-ma-finish'] - 
+                                        this.timings['look-ma-im-start'];
+                    </code>
 
                     <p>И на сервер прилетают подобные записи:</p>
 
@@ -160,8 +164,7 @@
 
                     <p>Формат файла с патчами для проекта выглядит так:</p>
 
-                    <code>
-                        <pre>
+                    <pre>
 [
     {
         "k": "jane.css",
@@ -174,8 +177,7 @@
         "s": 4554
     }
 ]
-                        </pre>
-                    </code>
+                    </pre>
 
                     <p>
                         То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
@@ -198,7 +200,9 @@ k = 0
 while ||&nabla;&fnof;<sub>k</sub>|| > &epsilon;
     найти направление p<sub>k</sub> = -C<sub>k</sub>&nabla;&fnof;<sub>k</sub>
     вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>p<sub>k</sub>
-    обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> = &nabla;&fnof;<sub>k+1</sub> - &nabla;&fnof;<sub>k</sub>
+    обозначить 
+        s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub>
+        и y<sub>k</sub> = &nabla;&fnof;<sub>k+1</sub> - &nabla;&fnof;<sub>k</sub>
     вычислить C<sub>k+1</sub>
     k = k + 1
 end
@@ -215,7 +219,10 @@ end
 
                     <p>Итог</p>
 
-                    <p>Фактически мы экономим <strong>80-90%</strong> трафика. Размер загружаемой статитки в байтах:</p>
+                    <p>
+                        Фактически мы экономим <strong>80-90%</strong> трафика.
+                        Размер загружаемой статитки в байтах:
+                    </p>
 
                     <table>
                         <thead>
@@ -243,25 +250,31 @@ end
                             </tr>
                         </tbody>
                     </table>
+                    <hr>
+                    <p>
+                        Автор: @doochik<br>
+                        С++ разработик<br>
+                        Электронная почта: 
+                            (<a href="mailto:doochik@yandex-team.">doochik@yandex-team.ru</a>)<br>
+                        Компания: Яндекс<br>
+                    </p>
                 </article>
             </section>
-            <section>
-                <p>
-                    Автор: @doochik<br>
-                    С++ разработик
-                    <address>Электронная почта: (doochik@yandex-team.ru)</address>
-                    Компания: Яндекс<br>
-                </p>
-            </section>
             <section>        
-                <title>Комментарии (3):</title>
+                <h2>Комментарии (3):</h2>
                 <div>
-                    <p>- Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) <time>30 ноября 2014 в 17:05</time></p>
+                    <p>
+                        - Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>)
+                        30 ноября 2014 в <time>17:05</time>
+                    </p>
 
                     <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
                 </div>
                 <div>
-                    <p>- JIguse (<a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>) <time>29 ноября 2014 в 21:30</time></p>
+                    <p>
+                        - JIguse (<a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>)
+                        29 ноября 2014 в <time>21:30</time>
+                    </p>
                     <p>
                         Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
                         подробностями о внутренней работе сервисов.
@@ -269,7 +282,10 @@ end
                 </div>
 
                 <div>
-                    <p>- Brister (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>) <time>24 ноября 2014 в 13:13</time></p>
+                    <p>
+                        - Brister (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>)
+                        24 ноября 2014 в <time>13:13</time>
+                    </p>
                     <p>
                         (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
                         Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
@@ -278,13 +294,20 @@ end
                     </p>
                 </div>
                 <div>
-                    <p>- alexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>) <time>22 ноября 2014 в 17:35</time></p>
                     <p>
-                      Мы измеряем скорость загрузки с помощью <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">Яндекс.Метрики</a>
+                        - alexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>)
+                        22 ноября 2014 в <time>17:35</time>
+                    </p>
+                    <p>
+                        Мы измеряем скорость загрузки с помощью
+                        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">Яндекс.Метрики</a>
                     </p>
                 </div>
             </section>
         </main>
-        <footer>© Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10</footer>
+        <footer>
+            © Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, 
+            <address>Хохрякова, 10</address>
+        </footer>
     </body>
 </html>
