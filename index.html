@@ -2,19 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-	<title>Блог компании Яндекс</title>
-	<style type="text/css">
-		.list
-		{
-			list-style: none;
-		}
-		.list li:before
-		{
-			content:  "—";
-			position: relative;
-			left:     -5px;
-		}
-	</style>
+    <title>Блог компании Яндекс</title>
 </head>
 <body>
     <header><h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1></header>
@@ -83,8 +71,8 @@
             </pre>
             <p>
                 C помощью <em>Date.now()</em> мы получаем текущее время. Все тайминги собираются и при
-                отправке рассчитываются. На этапах разница между <em>“end”</em> и <em>“start”</em> не считается,
-                а все вычисления производятся в конце:
+                отправке рассчитываются. На этапах разница между <em>“end”</em> 
+                и <em>“start”</em> не считается, а все вычисления производятся в конце:
             </p>
             <pre>
                 <code>
@@ -117,8 +105,8 @@
             </p>
             <p>
                 На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
-                RFC 3229 <em>Delta encoding in HTTP»</em> и <em>«Google SDHC»</em>, — но по разным причинам они
-                не получили должного распространения в браузерах и на серверах.
+                RFC 3229 <em>Delta encoding in HTTP»</em> и <em>«Google SDHC»</em>, — но по 
+                разным причинам они не получили должного распространения в браузерах и на серверах.
             </p>
             <p>
                 Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
@@ -134,11 +122,11 @@
             </p>
             <table>
                 <thead>
-					<tr>
-						<td>Библиотека </td>
-						<td>IE 9</td>
-						<td>Opera 12</td>
-					</tr>
+                    <tr>
+                        <td>Библиотека </td>
+                        <td>IE 9</td>
+                        <td>Opera 12</td>
+                    </tr>
                 </thead>
                 <tr>
                     <td>vcdiff</td>
@@ -186,10 +174,12 @@
                 инициализировать <var>H<sub>0</sub></var><br>
                 <var>k</var> = 0<br>
                 <strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| &gt; &epsilon;<br>
-                &nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> = <var>-C<sub>k</sub></var>&nabla;<var>f<sub>k</sub></var><br>
+                &nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> = <var>-C<sub>k</sub></var>
+                &nabla;<var>f<sub>k</sub></var><br>
                 &nbsp;&nbsp;вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> + 
                 &alpha;<sub>k</sub>p<sub>k</sub>, &alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
-                &nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></var> и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla;f</var><br>
+                &nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></var> 
+                и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla;f</var><br>
                 &nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
                 &nbsp;&nbsp;<var>k = k + 1</var><br>
                 <strong>end</strong>
@@ -217,11 +207,11 @@
             </p>
             <table>
                 <thead>
-					<tr>
-						<td>Релиз</td>
-						<td>С патчем</td>
-						<td>Без патча</td>
-					</tr>
+                    <tr>
+                        <td>Релиз</td>
+                        <td>С патчем</td>
+                        <td>Без патча</td>
+                    </tr>
                 </thead>
                 <tr>
                     <td>7.7.20 </td>
