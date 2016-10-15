@@ -10,10 +10,8 @@
 </head>
 <body>
 <header>
-    <hgroup>
-        <h1>Блог компании <span style="color: red;">Я</span>ндекс.</h1>
-        <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
-    </hgroup>
+    <h1>Блог компании Яндекс.</h1>
+    <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
 </header>
 <main>
     <p>
@@ -177,8 +175,8 @@
     <p>
         То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
         каждого объекта есть три свойства. <var>k</var> — названия ключа в <code>localStorage</code> для этого
-        ресурса. <var>p</var> — патч для ресурса, который сгенерировал <code>vcdiff</code>. <var>s</var> — чексумма
-        для ресурса актуальной версии, чтобы потом можно было проверить правильность
+        ресурса. <var>p</var> — патч для ресурса, который сгенерировал <code>vcdiff</code>. <var>s</var> —
+        чексумма для ресурса актуальной версии, чтобы потом можно было проверить правильность
         наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
     </p>
     <p>
@@ -191,9 +189,12 @@
         дано &epsilon;, \(x_0\)<br>
         инициализировать \(H_0\)<br>
         &kappa;=0<br>
-        <span class="bold-font">while</span>\(&verbar;&verbar;&nabla;&fnof;_&kappa;&verbar;&verbar;>&epsilon;\)<br>
-        <span class="margin-left-twenty">найти направление \(&rho;_&kappa;=-C_&kappa;&nabla;&fnof;_&kappa;\)</span><br>
-                <span class="margin-left-twenty">вычислить \(x_{&kappa;+1}=x_&kappa;+&alpha;_&kappa;&rho;_&kappa;,&alpha;_&kappa;\)
+        <span class="bold-font">while</span>
+        \(&verbar;&verbar;&nabla;&fnof;_&kappa;&verbar;&verbar;>&epsilon;\)<br>
+        <span class="margin-left-twenty">найти направление
+        \(&rho;_&kappa;=-C_&kappa;&nabla;&fnof;_&kappa;\)</span><br>
+                <span class="margin-left-twenty">вычислить
+                \(x_{&kappa;+1}=x_&kappa;+&alpha;_&kappa;&rho;_&kappa;,&alpha;_&kappa;\)
                 удовлетворяет условиям Вольфе</span><br>
                 <span class="margin-left-twenty">обозначить \(s_&kappa;=x_{&kappa;+1}-x_&kappa;\) и
                 \(y_&kappa;=&nabla;&fnof;_{&kappa;+1}-&nabla;&fnof;_&kappa;\)</span><br>
@@ -203,8 +204,8 @@
     </p>
     <p><img src="https://clck.ru/9b3Sn" width="529" height="237" alt="Очень симпатичный алгоритм"></p>
     <p>
-        Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br>
-    <dl>
+        Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</p>
+    <div><dl>
         <dt><em>CRC16/32</em></dt>
         <dd> - алгоритм нахождения контрольной суммы, предназначенный для проверки
             целостности данных</dd>
@@ -213,7 +214,7 @@
             или дайджестов сообщения произвольной длины и последующей проверки
             их подлинности.</dd>
     </dl>
-    </p>
+    </div>
     <p>Потому что он быстрый, компактный и легок в реализации.</p>
     <p><strong>Итог</strong></p>
     <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
@@ -258,7 +259,8 @@
                 - Mogaika <a href="mailto:mogaika@yandex-team.ru">(mogaika@yandex-team.ru)</a>
                 &nbsp;<time datetime="2014-11-30">30 ноября 2014 в 17:05</time>
             </header>
-            <p class="margin-left-ten">А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
+            <p class="margin-left-ten">А можете привести сравнение,
+                на сколько быстрее грузится lite версия?</p>
         </article>
         <article>
             <header>
