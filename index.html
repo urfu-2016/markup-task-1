@@ -16,8 +16,9 @@
     <hr>
 
     <h2>Что мы измеряем</h2>
-
+<div>
 <p>Этапы первой загрузки:</p>
+</div>
 <ul><li>подготовка;</li>
 <li>загрузка статики (HTTP-запрос и парсинг);</li>
 <li>исполнение модулей;</li>
@@ -65,7 +66,7 @@ this.timings['look-ma-finish'] = Date.now();<br></code><br>
 а все вычисления производятся в конце:</p>
 <code>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
 И на сервер прилетают подобные записи:
-<code>serverResponse=50&amp;domUpdate=60</code>
+<code>serverResponse=50&amp;domUpdate=60</code><a href="http://vk.com"></a>
 <h2>Как мы ускоряем</h2>
 
 Чтобы снизить время загрузки почты при выходе новых версий,
@@ -88,8 +89,8 @@ RFC 3229 «Delta encoding in HTTP» и «Google SDHC», — но по разны
 - VCDiff
 - google-diff-patch-match
 
-Для окончательного выбора библиотеки нам нужно сравнить:
 <table>
+<caption>Для окончательного выбора библиотеки нам нужно сравнить:</caption>
 <tr>
     <th>Библиотека</th>
     <th>IE 9</th>
