@@ -186,6 +186,19 @@
                     без ограничений.
                 </p>
                 <p>
+                    Дано &#949;, x<sub>0</sub><br>
+                    Инициировать H<sub>0</sub><br>
+                    k = 0<br>
+                    while ||&#8711;f<sub>k</sub>|| &#62; &#949;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Найти направление &#961;<sub>k</sub> = &ndash; C<sub>k</sub>&#8711;f<sub>k</sub><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Вычислить x<sub>k+1</sub> = x<sub>k</sub> + &#945;<sub>k</sub>&#961;<sub>k</sub>,
+                    &#945;<sub>k</sub>удовлетворяет условиям Вольфе<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Обозначить s<sub>k</sub> = x<sub>k+1</sub> &ndash; x<sub>k</sub> и y<sub>k</sub> = &#8711;f<sub>k+1</sub> &ndash; &#8711;f<sub>k</sub>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Вычислить C<sub>k+1</sub><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; k = k + 1<br>
+                    end
+                </p>
+                <p>
                     Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:
                     CRC16/32 - алгоритм нахождения контрольной суммы, предназначенный для проверки
                     целостности данных
