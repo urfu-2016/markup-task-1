@@ -173,21 +173,20 @@
                 наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
             </p>
             <code>
-                дано <var>&epsilon;</var>, <var>x</var><sub>0</sub><br>
-                инициализировать <var>H</var><sub>0</sub><br>
-                <var>k</var> = 0<br>
-                <strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| &gt; <var>&epsilon;</var><br>
-                &nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> =
-                -<var>C<sub>k</sub>&nabla;f<sub>k</sub></var><br>
-                &nbsp;&nbsp;вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> +
-                &alpha;<sub>k</sub>p<sub>k</sub>,
-                &alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
-                &nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> -
-                x<sub>k</sub></var> и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> -
-                &nabla;f<sub>k</sub></var><br>
-                &nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
-                &nbsp;&nbsp;<var>k = k + 1</var><br>
-                <strong>end</strong><br>
+                <pre>
+                    дано &epsilon;, x<sub>0</sub>
+                    инициализировать H<sub>0</sub>
+                    k = 0
+                    <strong>while</strong> ||&nabla;f<sub>k</sub>|| &gt; &epsilon;
+                    найти направление p<sub>k</sub> = —C<sub>k</sub>&nabla;f<sub>k</sub>
+                    вычислить x<sub>k+1</sub> = x<sub>0</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
+                    &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
+                    обозначить s<sub>k</sub> = x<sub>k+1</sub> — x<sub>k</sub> и
+                    y<sub>k</sub> = &nabla;f<sub>k+1</sub> — &nabla;f<sub>k</sub>
+                    вычислить C<sub>k+1</sub>
+                    k = k + 1
+                    <strong>end</strong>
+                </pre>
             </code>
             <p>
                 Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно (BFGS)
