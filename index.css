@@ -1,0 +1,13 @@
+.without-top-margin
+{
+    margin-top: 0;
+}
+.red-line
+{
+    display: inline-block;
+    margin-left: 20px;
+}
+.comments-group
+{
+    list-style-type: none;
+}
