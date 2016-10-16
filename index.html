@@ -172,22 +172,20 @@
                 ресурса актуальной версии, чтобы потом можно было проверить правильность
                 наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
             </p>
-            <code>
-                <pre>
+            <pre>
                     дано &epsilon;, x<sub>0</sub>
                     инициализировать H<sub>0</sub>
                     k = 0
                     <strong>while</strong> ||&nabla;f<sub>k</sub>|| &gt; &epsilon;
-                    найти направление p<sub>k</sub> = —C<sub>k</sub>&nabla;f<sub>k</sub>
+                найти направление p<sub>k</sub> = —C<sub>k</sub>&nabla;f<sub>k</sub>
                     вычислить x<sub>k+1</sub> = x<sub>0</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
-                    &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
+                &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
                     обозначить s<sub>k</sub> = x<sub>k+1</sub> — x<sub>k</sub> и
                     y<sub>k</sub> = &nabla;f<sub>k+1</sub> — &nabla;f<sub>k</sub>
                     вычислить C<sub>k+1</sub>
                     k = k + 1
                     <strong>end</strong>
                 </pre>
-            </code>
             <p>
                 Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно (BFGS)
                 — итерационный метод численной оптимизации, предназначенный для
