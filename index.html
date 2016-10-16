@@ -195,23 +195,23 @@
                 <div>
                     <dl>
                         <dt>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно (BFGS)</dt>
-                        <dd>итерационный метод численной оптимизации, предназначенный для
+                        <dd> - итерационный метод численной оптимизации, предназначенный для
                             нахождения локального максимума/минимума нелинейного функционала
                             без ограничений.
-                            <div>
-                                Дано &epsilon;,x<sub>0</sub><br>
-                                Инициализировать H<sub>0</sub><br>
-                                k = 0<br>
-                                while || &nabla;&fnof;<sub>k</sub>|| > &epsilon;<br>
-                                найти направление p<sub>k</sub> = -C<sub>k</sub>&nabla;&fnof;<sub>k</sub><br>
-                                <nobr>вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>
-                                p<sub>k</sub>, &alpha;<sub>k</sub> удовлетворяет условию Вольфе</nobr><br>
-                                <nobr>обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y
-                                <sub>k</sub> = &nabla;&fnof;<sub>k+1</sub> - &nabla;&fnof;<sub>k</sub></nobr><br>
-                                вычислить C<sub>k+1</sub><br>
-                                k = k+1<br>
-                                end
-                            </div>
+                            
+                            Дано &epsilon;,x<sub>0</sub><br>
+                            Инициализировать H<sub>0</sub><br>
+                            k = 0<br>
+                            while || &nabla;&fnof;<sub>k</sub>|| > &epsilon;<br>
+                            найти направление p<sub>k</sub> = -C<sub>k</sub>&nabla;&fnof;<sub>k</sub><br>
+                            <nobr>вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>
+                            p<sub>k</sub>, &alpha;<sub>k</sub> удовлетворяет условию Вольфе</nobr><br>
+                            <nobr>обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y
+                            <sub>k</sub> = &nabla;&fnof;<sub>k+1</sub> - &nabla;&fnof;<sub>k</sub></nobr><br>
+                            вычислить C<sub>k+1</sub><br>
+                            k = k+1<br>
+                            end
+
                         </dd>
                     </dl>    
                 </div>
