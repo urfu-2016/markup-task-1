@@ -150,20 +150,20 @@
             <p>
                 Формат файла с патчами для проекта выглядит так:
             </p>
-            <code>
+            <pre>
                 [<br>
-                &nbsp;&nbsp;{<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"k": "jane.css",<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"p": [patch],<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"s": 4554<br>
-                &nbsp;&nbsp;},<br>
-                &nbsp;&nbsp;{<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"k": "jane.css",<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"p": [patch],<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"s": 4554<br>
-                &nbsp;&nbsp;}<br>
+                    {<br>
+                        "k": "jane.css",<br>
+                        "p": [patch],<br>
+                        "s": 4554<br>
+                    },<br>
+                    {<br>
+                        "k": "jane.css",<br>
+                        "p": [patch],<br>
+                        "s": 4554<br>
+                    }<br>
                 ]<br>
-            </code>
+            </pre>
             <p>
                 То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
                 каждого объекта есть три свойства. k — названия ключа в localStorage для этого
