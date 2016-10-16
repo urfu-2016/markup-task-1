@@ -8,7 +8,6 @@
     <header>Блог компании Яндекс.</header>
         <article>
             <h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1>
-
             <p>
                 Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
                 какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -83,7 +82,7 @@
             <p>
                 И на сервер прилетают подобные записи:
                 <br>
-                <samp>serverResponse=50&domUpdate=60</samp>
+                <samp>serverResponse=50&amp;domUpdate=60</samp>
             </p>
             <h2>Как мы ускоряем</h2>
             <h3>Чтобы снизить время загрузки почты при выходе новых версий,
@@ -108,7 +107,7 @@
                 Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
                 начали искать реализации <em>diff</em> на JS. На популярных хостингах кода нашли
                 библиотеки:
-            </p>    
+            </p>
             <ul>
                 <li>VCDiff</li>
                 <li>google-diff-patch-match</li>
@@ -171,9 +170,9 @@
                 &nbsp;&nbsp;вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> +<var>
                 &alpha;<sub>k</sub>p<sub>k</sub></var>, <var>&alpha;<sub>k</sub></var>
                 &nbsp;&nbsp;удовлетворяет условиям Вольфе<br>
-                &nbsp;&nbsp;обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> - <var>x<sub>k</sub></var>
-                  и <var>y<sub>k</sub></var> = &nabla;<var>f<sub>k+1</sub></var> - 
-                  &nabla;<var>f<sub>k</sub></var><br>
+                &nbsp;&nbsp;обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> -
+                <var>x<sub>k</sub></var> и <var>y<sub>k</sub></var> = &nabla;<var>f<sub>k+1</sub></var> -
+                &nabla;<var>f<sub>k</sub></var><br>
                 &nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
                 &nbsp;&nbsp;<var>k = k + 1</var><br>
                 <strong>end</strong>
