@@ -1,3 +1,4 @@
+'use strict'
 /* global describe, it, global */
 
 require('should');
