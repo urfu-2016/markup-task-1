@@ -1,0 +1,24 @@
+blockquote
+{
+    background: #f7f7f7;
+    width: 1000px;
+}
+
+.author-info
+{
+    background: #e2ecf6;
+    padding: 10px;
+    margin: 5px;
+}
+
+.untagged-list
+{
+    list-style: none;
+}
+
+.comment-info
+{
+    background: #e2ecf6;
+    padding: 10px;
+    margin: 5px;
+}
