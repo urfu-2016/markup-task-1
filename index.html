@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Мяндекс.Муррркет</title>
-		<link rel="stylesheet" href="index.css">
-	</head>
+		<head>
+				<meta charset="utf-8">
+				<title>Мяндекс.Муррркет</title>
+				<link rel="stylesheet" href="index.css">
+		</head>
 		<body>
 			<header>Блог компании Яндекс.</header>
 			<main>
-				<h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1>
+				<h1><strong>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</strong></h1>
 				<p>
 					Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
 					какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -76,7 +76,7 @@
 					а все вычисления производятся в конце:
 				</p>
 				<code>
-						var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];
+						<var>var totalTime</var> = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];
 				</code>
 				<p>И на сервер прилетают подобные записи:</p>
 				<code>
@@ -143,7 +143,9 @@
 					После того как мы определились с библиотекой для диффа, нужно определиться с тем,
 					где и как хранить статику на клиенте.
 				</p>
-				<p>Формат файла с патчами для проекта выглядит так:</p>
+				<p>
+					Формат файла с патчами для проекта выглядит так:
+				</p>
 				<pre>
 					[
 						{
@@ -172,15 +174,15 @@
 					без ограничений.
 				</p>
 				<pre>
-					дано &epsilon; x<sub>0</sub>
+					дано &epsilon;x<sub>0</sub>
 					Инициализировать H<sub>0</sub>
 					k = 0
-					while ||&nabla; f<sub>k</sub>|| &gt &epsilon;
-						найти направление p<sub>k</sub> = -C<sub>k</sub> &nabla; f<sub>k</sub>
+					while ||&nabla;f<sub>k</sub>|| &gt; &epsilon;
+						найти направление p<sub>k</sub> = -C<sub>k</sub>&nabla;f<sub>k</sub>
 						вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
-						&alpha<sub>k</sub> удовлетворяет условиям Вольфе
+						&alpha;<sub>k</sub> удовлетворяет условиям Вольфе
 						обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и
-						y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla; f<sub>k</sub>
+						y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla;f<sub>k</sub>
 						вычислить C<sub>k+1</sub>
 						k = k + 1
 					end
