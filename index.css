@@ -1,0 +1,31 @@
+body
+{
+    font-size: 20px;
+    background-color: aliceblue;
+}
+
+header
+{
+    text-align: center;
+}
+
+.ya
+{
+    color: red;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    border: solid 1px #000;
+    padding: 5px;
+}
+
+footer
+{
+    padding-top: 15px;
+}
