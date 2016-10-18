@@ -63,7 +63,7 @@
             а все вычисления производятся в конце:</p>
         <p><code>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
             <br>И на сервер прилетают подобные записи:</p>
-        <p><samp>serverResponse=50&domUpdate=60
+        <p><samp>serverResponse=50&amp;domUpdate=60
         </samp></p>
         <h3>Как мы ускоряем</h3>
         <div>Чтобы снизить время загрузки почты при выходе новых версий,
@@ -75,8 +75,8 @@
                 <li>используем CDN;</li>
             </ul>
         </div>
-        <p>Мы подумали:<i>«А что если хранить где-то старую версию файлов, а при выходе новой
-            передавать только diff между ней и той, которая сохранена у пользователя?»</i>
+        <p>Мы подумали:<em>«А что если хранить где-то старую версию файлов, а при выходе новой
+            передавать только diff между ней и той, которая сохранена у пользователя?»</em>
             В браузере же останется просто наложить патч на клиенте.</p>
         <p>На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
             <a href="https://tools.ietf.org/html/rfc3229"> RFC 3229 «Delta encoding in HTTP»</a> и <a
@@ -85,8 +85,8 @@
         <p>Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
             начали искать реализации diff на JS. На популярных хостингах кода нашли
             библиотеки:<br><br>
-            - <i>VCDiff</i><br>
-            - <i>google-diff-patch-match</i></p>
+            - <em>VCDiff</em><br>
+            - <em>google-diff-patch-match</em></p>
         <div>Для окончательного выбора библиотеки нам нужно сравнить:<br><br>
             <table>
                 <thead>
@@ -131,7 +131,7 @@
         <p>То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
             каждого объекта есть три свойства.
             <mark>k</mark>
-            — названия ключа в <i>localStorage</i> для этого
+            — названия ключа в <em>localStorage</em> для этого
             ресурса.
             <mark>p</mark>
             — патч для ресурса, который сгенерировал vcdiff.
@@ -152,12 +152,12 @@
 <var>k</var> = 0
 <strong>while</strong> ||&nabla;f<sub>k</sub>|| &gt; &epsilon;
                 найти направление p<sub>k</sub> = —C<sub>k</sub>&nabla;f<sub>k</sub>
-  вычислить x<sub>k+1</sub> = x<sub>0</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
+    вычислить x<sub>k+1</sub> = x<sub>0</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
                 &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
-  обозначить s<sub>k</sub> = x<sub>k+1</sub> — x<sub>k</sub> и
-  y<sub>k</sub> = &nabla;f<sub>k+1</sub> — &nabla;f<sub>k</sub>
-  вычислить C<sub>k+1</sub>
-  <var>k</var> = <var>k</var> + 1
+    обозначить s<sub>k</sub> = x<sub>k+1</sub> — x<sub>k</sub> и
+    y<sub>k</sub> = &nabla;f<sub>k+1</sub> — &nabla;f<sub>k</sub>
+    вычислить C<sub>k+1</sub>
+    <var>k</var> = <var>k</var> + 1
 <strong>end</strong>
                 </pre>
         </div>
