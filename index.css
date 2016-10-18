@@ -1,0 +1,21 @@
+body
+{
+    background-color: azure;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+li:before
+{
+    content: '* ';
+}
+
+table,
+th,
+td
+{
+    border: 1px solid black;
+}
