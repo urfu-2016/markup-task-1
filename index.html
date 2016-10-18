@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</title>
+    <title>Блог компании Яндекс.</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Блог компании <span style="color:red;">Я</span>ндекс.</h1>
+        <h1>Блог компании <span class="ya">Я</span>ндекс.</h1>
         <h2>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h2>
     </header>
     <main>
@@ -52,7 +52,8 @@
             рассказать, сколько пользователей ускорилось, а сколько замедлилось.
         </p>
         <p>
-            <abbr title="Application Performance Index">APDEX</abbr> – метрика, которая сразу говорит: хорошо или плохо. Метрика
+            <abbr title="Application Performance Index">APDEX</abbr> –
+            метрика, которая сразу говорит: хорошо или плохо. Метрика
             работает очень просто. Мы выбираем временной интервал [0; t], такой, что если
             время показа страницы попало в него, то пользователь счастлив. Берем еще один
             интервал, (t; 4t] (в четыре раза больше первого), и считаем, что если страница
@@ -154,7 +155,8 @@
             То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
             каждого объекта есть три свойства. <strong>k</strong> — названия ключа в localStorage для этого
             ресурса. <strong>p</strong> — патч для ресурса, который сгенерировал <em>vcdiff</em>.
-            <strong>s</strong> — чексумма для ресурса актуальной версии, чтобы потом можно было проверить правильность
+            <strong>s</strong> — чексумма для ресурса актуальной версии,
+            чтобы потом можно было проверить правильность
             наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
         </p>
         <p>
@@ -169,8 +171,10 @@
             Инициализировать <var>H<sub>0</sub></var><br>
             <var>k</var> = 0<br>
             <strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| > <var>&epsilon;</var><br>
-            найти направление <var>p<sub>k</sub></var> = &minus;<var>C<sub>k</sub></var>&nabla;<var>f<sub>k</sub></var><br>
-            вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> + <var>&alpha;<sub>k</sub></var><var>p<sub>k</sub></var>,
+            найти направление <var>p<sub>k</sub></var> =
+            &minus;<var>C<sub>k</sub></var>&nabla;<var>f<sub>k</sub></var><br>
+            вычислить <var>x<sub>k+1</sub></var> =
+            <var>x<sub>k</sub></var> + <var>&alpha;<sub>k</sub></var><var>p<sub>k</sub></var>,
             <var>&alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
             обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> - <var>x<sub>k</sub></var> и
             <var>y<sub>k</sub></var> = &nabla;<var>f<sub>k+1</sub></var> - &nabla;<var>f<sub>k</sub></var><br>
@@ -219,7 +223,8 @@
         <p>
             <strong>Автор:</strong> @doochik<br>
             С++ разработик<br>
-            <strong>Электронная почта:</strong> (<a href="mailto:doochik@yandex-team.ru">doochik@yandex-team.ru</a>)<br>
+            <strong>Электронная почта:</strong> 
+            (<a href="mailto:doochik@yandex-team.ru">doochik@yandex-team.ru</a>)<br>
             <strong>Компания:</strong> Яндекс
         </p>
         <h4>Комментарии (3):</h4>
@@ -253,7 +258,8 @@
             <small>22 ноября 2014 в 17:35</small>
             <p>
                 Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
-                <a href="http://help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
+                <a href="http://help.yandex.ru/metrika/reports/monitoring_timing.xml">
+                    help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
             </p>
         </div>
     </main>
