@@ -58,7 +58,7 @@
             выполняется JavaScript. Выглядит это примерно так:</p>
         <p><code>this.timings['look-ma-im-start'] = Date.now();<br>
             this.timings['look-ma-finish'] = Date.now();</code></p>
-        <p>C помощью <i>Date.now()</i> мы получаем текущее время. Все тайминги собираются и при
+        <p>C помощью <em>Date.now()</em> мы получаем текущее время. Все тайминги собираются и при
             отправке рассчитываются. На этапах разница между “end” и “start” не считается,
             а все вычисления производятся в конце:</p>
         <p><code>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
