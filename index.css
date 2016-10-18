@@ -1,12 +1,21 @@
-body{
+body
+{
     background-color: azure;
 }
-li {
+
+li
+{
     list-style-type: none;
-   }
-li:before {
-    content: "* ";
-   }
-table, th, td {
+}
+
+li:before
+{
+    content: '* ';
+}
+
+table,
+th,
+td
+{
     border: 1px solid black;
 }
