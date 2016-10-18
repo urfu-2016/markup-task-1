@@ -1,17 +1,26 @@
-body {
+body
+{
     font-size: 20px;
     background-color: aliceblue;
 }
-header {
+
+header
+{
     text-align: center;
 }
-table {
+
+table
+{
     border-collapse: collapse;
 }
-th {
+
+th
+{
     border: solid 1px #000;
     padding: 5px;
 }
-footer {
+
+footer
+{
     padding-top: 15px;
 }
