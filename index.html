@@ -8,6 +8,10 @@
 		background-color: #E6E6E6;
 		padding-left: 10px;	
 	}
+	
+	table {
+		cellpadding="5"
+	}
 	</style>
 </head>
 <body>
@@ -22,7 +26,7 @@
 			иногда — исправляем ошибки, а это значит, у нас постоянно появляются новый код
 			и новая логика. Всё это напрямую влияет на скорость работы интерфейса.
 		</p>
-		<img src="http://windowsarena.ru/wp-content/uploads/2016/04/yandex_logo.png" style="width: 50%">
+		<img src="http://windowsarena.ru/wp-content/uploads/2016/04/yandex_logo.png" style="width: 50%" alt="Яндекс">
 		<section>
 			<h3>Что мы измеряем</h3>			
 			<p><u>Этапы первой загрузки:</u></p>
@@ -118,7 +122,7 @@
 			<p><b>- VCDiff<br>
 			- google-diff-patch-match</b></p>
 			<p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
-			<table cellpadding="5">
+			<table>
 				<tr>
 					<td>Библиотека</td>
 					<td>IE 9</td>
@@ -173,7 +177,7 @@
 			<div id="BFGS">
 				дано <b><i>&epsilon;, x</i><sub>0</sub></b><br>
 				инициализировать <b><i>&Eta;</i><sub>0</sub></b><br>
-				<b><i>k</b></i> = 0<br>
+				<b><i>k</i></b> = 0<br>
 				<b>while ||&nabla;&fnof;<i><sub>k</sub></i>|| > <i>&epsilon;</i></b><br>
 				&nbsp;&nbsp; найти направление 
 				<b><i>p<sub>k</sub> = -C<sub>k</sub>&nabla; &fnof;<sub>k</sub></i></b><br>
@@ -185,7 +189,7 @@
 				<b><i>y<sub>k</sub> = &nabla; &fnof;<sub>k+1</sub> - &nabla; &fnof;<sub>k</sub></i></b><br>
 				&nbsp;&nbsp; вычислить
 				<b><i>C<sub>k+1</sub></i></b><br>
-				&nbsp;&nbsp; <b><i>k = k + 1</b></i><br>
+				&nbsp;&nbsp; <b><i>k = k + 1</i></b><br>
 				<b>end</b>
 			</div>
 			<p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</p>
@@ -203,7 +207,7 @@
 		<section>
 			<h3>Итог</h3>
 			<p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
-			<table cellpadding="5">
+			<table>
 				<tr>
 					<td>Релиз</td>
 					<td>С патчем </td>
