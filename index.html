@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <h2>Блог компании Яндекс.</h2>
+        <h2>Блог компании <span style="color:#f44336">Я</span>ндекс.</h2>
     </header>
     <article>
         <h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ
@@ -140,20 +140,22 @@
                 без ограничений.</dd>
         </dl>
         <code>
-            дано &epsilon;, x<sub><small>0</small></sub><br>
-            инициализировать H<sub><small>0</small></sub><br>
-            k = 0<br>
-            <strong>while</strong> ||&nabla;f<sub>k</sub>||&gt;&epsilon;<br>
-            найти направление p<sub><small>k</small></sub>=-C<sub><small>k</small></sub>&nabla;f
-            <sub><small>k</small></sub><br>
-            вычислить x<sub><small>k+1</small></sub> = x<sub><small>k</small></sub>+&alpha;<sub>
-            <small>k</small></sub>p<sub><small>k</small></sub>,
-            (&alpha;<sub><small>k</small></sub> удовлетворяет условиям Вольфе)<br>
-            обозначить s<sub><small>k</small></sub>=x<sub><small>k+1</small></sub>-x<sub>
-            <small>k</small></sub> и y<sub><small>k</small></sub>=&nabla;f<sub><small>k+1</small>
-            </sub>-&nabla;f<sub><small>k</small></sub><br>
-            вычислить C<sub><small>k+1</small></sub><br>
-            k = k + 1<br>
+            дано <var>&epsilon;</var>, <var>x</var><sub><small>0</small></sub><br>
+            инициализировать <var>H</var><sub><small>0</small></sub><br>
+            <var>k</var> = 0<br>
+            <strong>while</strong> ||<var>&nabla;f</var><sub>k</sub>||&gt;<var>&epsilon;</var><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;найти направление <var>p</var><sub><small>k</small></sub>=
+            -<var>C</var><sub><small>k</small></sub><var>&nabla;f</var><sub><small>k</small></sub><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;вычислить <var>x</var><sub><small>k+1</small></sub> = 
+            <var>x</var><sub><small>k</small></sub>+<var>&alpha;</var><sub><small>k</small></sub>
+            <var>p</var><sub><small>k</small></sub>, (<var>&alpha;</var><sub><small>k</small></sub> 
+            удовлетворяет условиям Вольфе)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;обозначить <var>s</var><sub><small>k</small></sub>=<var>x</var>
+            <sub><small>k+1</small></sub> -<var>x</var><sub><small>k</small></sub> и
+            <var>y</var><sub><small>k</small></sub>= <var>&nabla;f</var><sub><small>k+1</small></sub>
+            - <var>&nabla;f</var><sub><small>k</small></sub><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;вычислить <var>C</var><sub><small>k+1</small></sub><br>
+            <var>k</var> = <var>k</var> + 1<br>
             <strong>end</strong>
         </code>
         <h3>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</h3>
@@ -192,8 +194,9 @@
             </tr>
         </table>
     </article>
-    <h2>Комментарии(3):</h2>
-    <table>
+    <section>
+        <h2>Комментарии(3):</h2>
+        <table>
             <tr>
                 <th><strong>Mogaika</strong></th>
                 <th><a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a></th>
@@ -239,6 +242,7 @@
                     <a href="http://help.yandex.ru/metrika/reports/monitoring_timing.xml">
                         help.yandex.ru/metrika/reports/monitoring_timing.xml</a></td>
             </tr>
-    </table>
+        </table>
+    </section>
 </body>
 </html>
