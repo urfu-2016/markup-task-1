@@ -1,12 +1,15 @@
-ul {
+ul
+{
     list-style-type: none;
 }
 
-li:before {
-    content: "*";
+li:before
+{
+    content: '*';
 }
 
-table {
+table
+{
     text-align: center;
     border: 1px;
     width: 400px;
