@@ -3,15 +3,6 @@
 <head>
     <title>Блог компании Яндекс.</title>
     <meta charset="utf-8">
-    <style type="text/css">
-        body {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        footer {
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
 <header>
@@ -44,13 +35,13 @@
             <li>шаблонизация;</li>
             <li>обновление DOM.</li>
         </ul>
-       <pre>
+        <pre>
            &mdash;<q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы
            &mdash;<q>Что же дальше?</q> - вопрошаете вы
            &mdash;<q>А давай построим график!</q> - отвечаем мы
            &mdash;<q>А что будем считать?</q> - уточняете вы
 
-       </pre>
+        </pre>
         <p>Как вы знаете, <strong>медиана</strong> – это серединное, а не среднее значение в выборке.
             Если у нас имеются числа 1, 2, 2, 3, 8, 10, 20, то медиана – 3, а среднее – 6,5.
             В общем случае медиана отлично показывает, сколько грузится средний пользователь.
@@ -75,8 +66,8 @@
         <code>this.timings['look-ma-im-start'] = Date.now();
             this.timings['look-ma-finish'] = Date.now();</code>
         <p>C помощью <code>Date.now()</code> мы получаем текущее время. Все тайминги собираются и при
-            отправке рассчитываются. На этапах разница между &quot;end&Prime; и &quot;start&Prime; не считается,
-            а все вычисления производятся в конце:</p>
+            отправке рассчитываются. На этапах разница между &quot;end&Prime; и &quot;start&Prime;
+            не считается, а все вычисления производятся в конце:</p>
         <code>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
         <p>И на сервер прилетают подобные записи:</p>
         <samp>serverResponse=50&amp;domUpdate=60</samp>
@@ -95,8 +86,8 @@
             передавать только diff между ней и той, которая сохранена у пользователя?</q>
             В браузере же останется просто наложить патч на клиенте.</p>
         <p>На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
-            RFC 3229 &laquo;Delta encoding in HTTP&raquo; и &laquo;Google SDHC&raquo;, — но по разным причинам они
-            не получили должного распространения в браузерах и на серверах.</p>
+            RFC 3229 &laquo;Delta encoding in HTTP&raquo; и &laquo;Google SDHC&raquo;,
+            — но по разным причинам они не получили должного распространения в браузерах и на серверах.</p>
         <p>Мы же решили сделать свой аналог на JS. Чтобы реализовать этот метод обновления,
             начали искать реализации diff на JS. На популярных хостингах кода нашли
             библиотеки:</p>
@@ -150,13 +141,15 @@
         дано &epsilon;, x<sub>0</sub>
         инициализировать H<sub>0</sub>
         k=0
-        <b>while</b>&Verbar;&nabla;f<sub>k</sub>&Verbar;&gt;&epsilon;
+        <strong>while</strong>&Verbar;&nabla;f<sub>k</sub>&Verbar;&gt;&epsilon;
             найти направление p<sub>k</sub>&equals;&minus;C<sub>k</sub>&nabla;f<sub>k</sub>
-            вычислить x<sub>k+1</sub>&equals;x<sub>k</sub>&plus;&alpha;<sub>k</sub>p<sub>k</sub>,&alpha;<sub>k</sub> удовлетворяет условиям Вольфе
-            обозначить s<sub>k</sub>&equals;x<sub>k+1</sub>&minus;x<sub>k</sub> и y<sub>k</sub>&equals;&nabla;f<sub>k+1</sub>&minus;&nabla;f<sub>k</sub>
+            вычислить x<sub>k+1</sub>&equals;x<sub>k</sub>&plus;&alpha;<sub>k</sub>p<sub>k</sub>,
+            &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
+            обозначить s<sub>k</sub>&equals;x<sub>k+1</sub>&minus;x<sub>k</sub> и
+            y<sub>k</sub>&equals;&nabla;f<sub>k+1</sub>&minus;&nabla;f<sub>k</sub>
             вычислить C<sub>k+1</sub>
             k&equals;k+1
-        <b>end</b>
+        <strong>end</strong>
         </pre>
         <p><dfn>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно <abbr>(BFGS)</abbr></dfn>
             — итерационный метод численной оптимизации, предназначенный для
@@ -225,7 +218,7 @@
         &emsp;наверное все-таки от 0.5 до 1<br><br>
         &mdash; alexeimois (<a href="">test@yandex.ru</a> 22 ноября 2014 в 17:35<br>
         &emsp; Мы измеряем скорость загрузки с помощью Яндекс.Метрики:<br>
-        &emsp;<a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
+        &emsp;<a href="">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
 
     </article>
 </section>
