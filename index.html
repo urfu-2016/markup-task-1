@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</title>
+    <title>ЯНДЕКС.ПОЧТА</title>
 </head>
 <body>
     <main>
@@ -51,7 +51,8 @@
         <p>В случае ускорения или замедления медиана, конечно, изменится. Но она не может
         рассказать, сколько пользователей ускорилось, а сколько замедлилось.</p>
 
-        <p><abbr title="Application Performance Index">APDEX</abbr> – метрика, которая сразу говорит: хорошо или плохо. Метрика
+        <p><abbr title="Application Performance Index">APDEX</abbr> – метрика, которая 
+            сразу говорит: хорошо или плохо. Метрика
         работает очень просто. Мы выбираем временной интервал [0; t], такой, что если
         время показа страницы попало в него, то пользователь счастлив. Берем еще один
         интервал, (t; 4t] (в четыре раза больше первого), и считаем, что если страница
@@ -82,7 +83,8 @@
             </code>
         </p>
 
-        <p>И на сервер прилетают подобные записи:        <samp><code>serverResponse=50&domUpdate=60</code></samp>
+        <p>И на сервер прилетают подобные записи:        <samp>
+    <code>serverResponse=50&amp;domUpdate=60</code></samp>
         </p>
 
         <h4>Как мы ускоряем</h4>
@@ -112,7 +114,7 @@
     </ul>
 
     <p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
-    <table border="1">
+    <table>
         
         <tr>
             <th>
@@ -190,9 +192,14 @@
         </p>
             <blockquote>
                 <p>
-                нвйти направление <var>p<sub>k</sub></var> = <var>C<sub>k</sub></var><var>&nabla;f<sub>k</sub></var><br>
-                вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> + <var>&alpha;<sub>k</sub></var><var>&rho;<sub>k</sub></var>, <var>&alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
-                обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> - <var>x<sub>k</sub></var> и <var>y<sub>k</sub></var> = <var>&nabla;f<sub>k+1</sub></var> - <var>&nabla;f<sub>k</sub></var><br>
+                нвйти направление <var>p<sub>k</sub></var> =  
+    <var>C<sub>k</sub></var><var>&nabla;f<sub>k</sub></var><br>
+                вычислить <var>x<sub>k+1</sub></var> = <var>x<sub>k</sub></var> +  
+                <var>&alpha;<sub>k</sub></var><var>&rho;<sub>k</sub></var>, <var>&alpha;<sub>k</sub></var> 
+                удовлетворяет условиям Вольфе<br>
+                обозначить <var>s<sub>k</sub></var> = <var>x<sub>k+1</sub></var> - 
+                <var>x<sub>k</sub></var> и <var>y<sub>k</sub></var> = 
+                 <var>&nabla;f<sub>k+1</sub></var> - <var>&nabla;f<sub>k</sub></var><br>
                 вычислить <var>C<sub>k+1</sub></var>
                 <var>k</var> = <var>k</var> + 1<br>
             </p>
@@ -222,10 +229,10 @@
 </pre>
 </section>
 <div id="authorInfo">
-    <p>Автор: <a href='@doochik'>@doochik</a>
-    <span style="color: blue">С++ разработик</span></p>
+    <p>Автор: <a href="@doochik">@doochik</a>
+    <span class="blue">С++ разработик</span></p>
     <address>
-    Электронная почта: (<a href='mailto:doochik@yandex-team.ru'>doochik@yandex-team.ru</a>)
+    Электронная почта: (<a href="mailto:doochik@yandex-team.ru">doochik@yandex-team.ru</a>)
     Компания: <mark>Я</mark>ндекс
 </address>
 </div>
@@ -235,13 +242,13 @@
     - Mogaika (mogaika@yandex-team.ru) 30 ноября 2014 в 17:05
 
       А можете привести сравнение, на сколько быстрее грузится lite версия?
-  </article>
+</article>
 <article>
     - JIguse (mrawesome@yandex.ru) 29 ноября 2014 в 21:30
 
       Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
       подробностями о внутренней работе сервисов.
-  </article>
+</article>
 <article>
     - Brister (brist89@yandex-team.ru) 24 ноября 2014 в 13:13
 
@@ -250,14 +257,14 @@
       хорошо или плохо работает почта.
 
       наверное все-таки от 0.5 до 1
-  </article>
+</article>
 <article>
     - alexeimois (test@yandex.ru) 22 ноября 2014 в 17:35
 
       Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
       help.yandex.ru/metrika/reports/monitoring_timing.xml
-  </article>
-  <footer>
+</article>
+<footer>
     <p>© Яндекс, help@yandex.ru, Хохрякова, 10</p>
 </footer>
 </article>
