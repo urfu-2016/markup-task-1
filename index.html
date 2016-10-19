@@ -19,28 +19,24 @@
         код и новая логика. Всё это напрямую влияет на скорость работы интерфейса.
     </p>
     <h3>Что мы измеряем</h3>
-    <p>
-        Этапы первой загрузки:
-        <ul>
-            <li>подготовка;</li>
-            <li>загрузка статики (<abbr title=" HyperText Transfer Protocol">HTTP</abbr>-запрос и парсинг);
-            </li>
-            <li>исполнение модулей;</li>
-            <li>инициализация базовых объектов;</li>
-            <li>отрисовка.</li>
-        </ul>
-    </p>
-    <p>
-        Этапы отрисовки любой страницы:
-        <ul>
-            <li>подготовка к запросу на сервер;</li>
-            <li>запрос данных с сервера;</li>
-            <li>шаблонизация;</li>
-            <li>обновление  <a href="https://ru.wikipedia.org/wiki/Document_Object_Model" target="_blank">
-                <abbr title="Document Object Model">DOM</abbr></a>;
-            </li>
-        </ul>
-    </p>
+    <h4>Этапы первой загрузки:</h4>
+    <ul>
+        <li>подготовка;</li>
+        <li>загрузка статики (<abbr title=" HyperText Transfer Protocol">HTTP</abbr>-запрос и парсинг);
+        </li>
+        <li>исполнение модулей;</li>
+        <li>инициализация базовых объектов;</li>
+        <li>отрисовка.</li>
+    </ul>
+    <h3>Этапы отрисовки любой страницы:</h3>
+    <ul>
+        <li>подготовка к запросу на сервер;</li>
+        <li>запрос данных с сервера;</li>
+        <li>шаблонизация;</li>
+        <li>обновление  <a href="https://ru.wikipedia.org/wiki/Document_Object_Model" target="_blank">
+            <abbr title="Document Object Model">DOM</abbr></a>;
+        </li>
+    </ul>
         <blockquote>
         — «Ок, теперь у нас есть метрики, мы можем отправить их на сервер» - говорим мы<br>
         </blockquote>
@@ -78,14 +74,13 @@
                     <mo>/</mo> 
                     <mn>2</mn>
                 </mrow>      
-                <mrow> 
+                <mrow>
                     <mi>кол-во всех</mi>
                 </mrow>
             </mfrac>
         </math><br>
         Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,хорошо или плохо 
         работает почта.
-    </p>
     <h3>Как мы измеряем</h3>
     <p>
         Сейчас модуль обновления сам логирует все свои стадии, и можно легко понять причину замедления: 
@@ -110,28 +105,22 @@
     </code>
     <h3>Как мы ускоряем</h3>
     <p>Чтобы снизить время загрузки почты при выходе новых версий, мы уже делаем следующее:</p>
-    <p>
-        <ul>
-            <li>включаем gzip;</li>
-            <li>выставляем заголовки кэширования;</li>
-            <li>фризим CSS, JS, шаблоны и картинки;</li>
-            <li>используем <a href="https://ru.wikipedia.org/wiki/Content_Delivery_Network" target="_blank">
-                <abbr title="Content Delivery Network">CDN</abbr></a>;
-            </li>
-        </ul>
-    </p>
+    <ul>
+        <li>включаем gzip;</li>
+        <li>выставляем заголовки кэширования;</li>
+        <li>фризим CSS, JS, шаблоны и картинки;</li>
+        <li>используем <a href="https://ru.wikipedia.org/wiki/Content_Delivery_Network" target="_blank">
+            <abbr title="Content Delivery Network">CDN</abbr></a>;
+        </li>
+    </ul>
     <p>
         Мы подумали: <blockquote>«А что если хранить где-то старую версию файлов, а при выходе новой 
         передавать только >diff между ней и той, которая сохранена у пользователя?»</blockquote> В браузере же
         останется просто наложить патч на клиенте.
-    </p>
-    <p>
         На самое деле эта идея не нова. Уже существуют стандарты для 
-        <abbr title=" HyperText Transfer Protocol">HTTP</abbr> — например, <span style="font-size 2em"> RFC 
+        <abbr title=" HyperText Transfer Protocol">HTTP</abbr> — например, <span style="font-size 2em">RFC 
         3229 «Delta encoding in HTTP»</span> и <span style="font-weight: 800">«Google SDHC»</span>, — но по 
         разным причинам они не получили должного распространения в браузерах и на серверах.
-    </p>
-    <p>
         Мы же решили сделать свой аналог на <abbr title="JavaScript">JS</abbr>. Чтобы реализовать этот метод
         обновления,начали искать реализации <span style="font-style: italic">diff</span> на 
         <abbr title="JavaScript">JS</abbr>. На популярных хостингах кода нашли библиотеки:
@@ -139,12 +128,11 @@
         <li><span style="font-style: italic">VCDiff</span></li>
         <li><span style="font-style: italic">google-diff-patch-match</span></li>
     </ul>
-    </p>
-    <p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
+    Для окончательного выбора библиотеки нам нужно сравнить:
     <table border="1">
         <thead>
             <tr>
-                <th>Библиотека </th>
+                <th>Библиотека</th>
                 <th>IE 9</th>
                 <th>Opera 12</th>
             </tr>
@@ -157,7 +145,7 @@
             </tr>
             <tr>
                 <td>google diff</td>
-                <td>1363 </td>
+                <td>1363</td>
                 <td>76</td>
             </tr>
         </tbody>
@@ -165,11 +153,9 @@
     <p>
         После того как мы определились с библиотекой для диффа, нужно определиться с тем,где и как хранить 
         статику на клиенте.
-    </p>
-    <p>
-        Формат файла с патчами для проекта выглядит так:
-        <pre>
-            <code>
+        Формат файла с патчами для проекта выглядит так:</p>
+    <pre>
+        <code>
                 [
                      {
                  "k": "jane.css",
@@ -182,9 +168,8 @@
                  "s": 4554
               }
             ]
-            </code>
-        </pre>
-    </p>
+        </code>
+    </pre>
     <p>
         То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У каждого объекта есть три
         свойства. <span style="font-style: italic">k</span> — названия ключа в 
@@ -212,28 +197,28 @@
     <p>Потому что он быстрый, компактный и легок в реализации.</p>
     <h2>Итог</h2>
     <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
-    <table border="1">
+    <table>
         <thead>
             <tr>
-                <th>Релиз </th>
+                <th>Релиз</th>
                 <th>С патчем</th>
                 <th>Без патча</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>7.7.20  </td>
+                <td>7.7.20</td>
                 <td>397</td>
                 <td>174 549</td>
             </tr>
             <tr>
                 <td>7.7.21d</td>
-                <td>383 </td>
+                <td>383</td>
                 <td>53 995</td>
             </tr>
             <tr>
                 <td>7.7.22d</td>
-                <td>483 </td>
+                <td>483</td>
                 <td>3 995</td>
             </tr>
         </tbody>
@@ -258,14 +243,14 @@
         <var>k</var> = <var>k</var> + 1
     </p>
     <code>end</code>
-    <p><hr></p>
+    <hr>
     <address style="text-align:right">
         Автор: <a href="@doochik">@doochik</a><br>
         С++ разработчик<br>
         Электронная почта: (<a href="mailto:doochik@yandex-team.ru">doochik@yandex-team.ru</a>)<br>
         Компания: <span style="color: red">Я</span>ндекс
     </address>
-    <p><hr></p>
+    <hr>
     <section>
         <h3>Комментарии(3):</h3>
         <ul>
