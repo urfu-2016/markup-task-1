@@ -4,33 +4,13 @@
     <meta charset="utf-8">
 	<link rel="stylesheet" href="index.css">
 	<title>Блог компании Яндекс.</title>
-	<style>
-		ul {
-			list-style-type: square; 
-	   }
-	   table {
-			border: 4px;  
-			border-collapse: separate; 
-			width: 25%;  
-			border-spacing: 8px 3px; 
-	   }
-	   td {
-			text-align: center;
-			padding: 3px;  
-			border: 5px; 
-	   }
-	   footer {
-			position: fixed;
-			right: 0; bottom: 0; 
-			padding: 10px;
-		}
-  </style>
 </head>
 <body>
+	<header>
+		<h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ<h1>
+	</header>
 	<main>
-		<h1><big>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</big><h1>
-
-		<p><font style="font-size:20pt;"><i>Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
+		<p><font><i>Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
 		какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
 		тормозит. Мы регулярно добавляем в Яндекс.Почту новую функциональность,
 		иногда — исправляем ошибки, а это значит, у нас постоянно появляются новый код
@@ -101,14 +81,14 @@
 		<p>И на сервер прилетают подобные записи:</p>
 
 		<p><code>
-			<blink>serverResponse=50&domUpdate=60</blink>
+			serverResponse=50&domUpdate=60
 		</code></p>
 
 		<h2><b>Как мы ускоряем</b></h2>
 
-		<p><font style="font-size:13pt;"><i>Чтобы снизить время загрузки почты при выходе новых версий,<br>
+		<p><i>Чтобы снизить время загрузки почты при выходе новых версий,<br>
 		мы уже делаем следующее:
-		</i></font></p>
+		</i></p>
 		
 		<section>
 			<ul>
@@ -116,7 +96,7 @@
 				<li>выставляем заголовки кэширования</li>
 				<li>фризим <abbr>CSS</abbr>, JS, шаблоны и картинки;</li>
 				<li>используем CDN;</li>
-			<ul>
+			</ul>
 		</section>
 
 		<p><em>Мы подумали:</em> <q>А что если хранить где-то старую версию файлов, а при выходе новой<br>
@@ -135,7 +115,7 @@
 			<li>google-diff-patch-match
 		</ul>
 
-		<p><font size="3"  face="Arial">Для окончательного выбора библиотеки нам нужно сравнить:</font></p>
+		<p><em>Для окончательного выбора библиотеки нам нужно сравнить:</em></p>
 
 		<table>
 			<thead>
@@ -192,7 +172,25 @@
 		— итерационный метод численной оптимизации, предназначенный для<br>
 		нахождения локального максимума/минимума нелинейного функционала<br>
 		без ограничений.</p>
-
+		<pre>
+			<code>
+				дано &epsilon;, <var>x<sub>0</sub></var><br>
+				инициализировать <var>H<sub>0</sub></var><br>
+				<var>k</var> = 0<br>
+				<strong>while</strong> ||&nabla;<var>f<sub>k</sub></var>|| &gt; &epsilon;<br>
+				&nbsp;&nbsp;найти направление <var>p<sub>k</sub></var> = <var>-C<sub>k</sub></var>
+				&nabla;<var>f<sub>k</sub></var><br>
+				&nbsp;&nbsp;вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> + 
+				&alpha;<sub>k</sub>p<sub>k</sub>, 
+				&alpha;<sub>k</sub></var> удовлетворяет условиям Вольфе<br>
+				&nbsp;&nbsp;обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></var> 
+				и <var>y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla;f</var><br>
+				&nbsp;&nbsp;вычислить <var>C<sub>k+1</sub></var><br>
+				&nbsp;&nbsp;<var>k = k + 1</var><br>
+				<strong>end</strong>
+			</code>
+		</pre>
+		
 		<p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:<br>
 		<b>CRC16/32</b> - алгоритм нахождения контрольной суммы, предназначенный для проверки<br>
 		целостности данных</p>
