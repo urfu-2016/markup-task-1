@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<header style="width: 50%">
+	<header>
 		<h1>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1>
 	</header>
-	<main style="width: 50%">
+	<main>
 		<p>
 			Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
 			какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -16,7 +16,7 @@
 			иногда — исправляем ошибки, а это значит, у нас постоянно появляются новый код
 			и новая логика. Всё это напрямую влияет на скорость работы интерфейса.
 		</p>
-		<img src="http://windowsarena.ru/wp-content/uploads/2016/04/yandex_logo.png" style="width: 50%" alt="Яндекс">
+		<img src="http://windowsarena.ru/wp-content/uploads/2016/04/yandex_logo.png" alt="Яндекс">
 		<section>
 			<h3>Что мы измеряем</h3>			
 			<p>Этапы первой загрузки:</p>
@@ -58,7 +58,7 @@
 				но уже не настолько счастлив. И применяем формулу:
 			</p>
 			<p>
-				<b>(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).</b>
+				(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
 			</p>
 			<p>
 				Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
@@ -73,17 +73,17 @@
 				выполняется JavaScript. Выглядит это примерно так:
 			</p>
 			<p>
-				<b>this.timings['look-ma-im-start'] = Date.now();</b><br>
-				<b>this.timings['look-ma-finish'] = Date.now();</b>
+				this.timings['look-ma-im-start'] = Date.now();<br>
+				this.timings['look-ma-finish'] = Date.now();
 			</p>
 			<p>
 				C помощью Date.now() мы получаем текущее время. Все тайминги собираются и при
 				отправке рассчитываются. На этапах разница между “end” и “start” не считается,
 				а все вычисления производятся в конце:
 			</p>
-			<p><b>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</b></p>
+			<p>var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];></p>
 			<p>И на сервер прилетают подобные записи:</p>
-			<p><b>serverResponse=50&amp;domUpdate=60</b></p>
+			<p>serverResponse=50&amp;domUpdate=60</p>
 		</section>
 		<section>
 			<h3>Как мы ускоряем</h3>
@@ -109,8 +109,10 @@
 				начали искать реализации diff на JS. На популярных хостингах кода нашли
 				библиотеки:
 			</p>
-			<p><b>- VCDiff<br>
-			- google-diff-patch-match</b></p>
+			<p>
+                - VCDiff<br>
+			    - google-diff-patch-match
+            </p>
 			<p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
 			<table>
 				<tr>
@@ -158,37 +160,37 @@
 				наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
 			</p>
 			<p>
-				<i>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанн
-				(<abbr title="Broyden — Fletcher — Goldfarb — Shanno algorithm">BFGS</abbr>)</i> 
+				Алгоритм Бройдена — Флетчера — Гольдфарба — Шанн
+				(<abbr title="Broyden — Fletcher — Goldfarb — Shanno algorithm">BFGS</abbr>)
 				— итерационный метод численной оптимизации, предназначенный для
 				нахождения локального максимума/минимума нелинейного функционала
 				без ограничений.
 			</p>
 			<div id="BFGS">
-				дано <b><i>&epsilon;, x</i><sub>0</sub></b><br>
-				инициализировать <b><i>&Eta;</i><sub>0</sub></b><br>
-				<b><i>k</i></b> = 0<br>
-				<b>while ||&nabla;&fnof;<i><sub>k</sub></i>|| > <i>&epsilon;</i></b><br>
+				дано &epsilon;, x<sub>0</sub><br>
+				инициализировать &Eta;<sub>0</sub><br>
+				k = 0<br>
+				while ||&nabla;&fnof;<sub>k</sub>|| > &epsilon;<br>
 				&nbsp;&nbsp; найти направление 
-				<b><i>p<sub>k</sub> = -C<sub>k</sub>&nabla; &fnof;<sub>k</sub></i></b><br>
+				p<sub>k</sub> = -C<sub>k</sub>&nabla; &fnof;<sub>k</sub><br>
 				&nbsp;&nbsp; вычислить
-				<b><i>x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub> p<sub>k</sub>, </i></b>
-				<b><i>&alpha;<sub>k</sub></i></b> удовлетворяет условиям Вольфе<br>
+				x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub> p<sub>k</sub>, 
+				&alpha;<sub>k</sub> удовлетворяет условиям Вольфе<br>
 				&nbsp;&nbsp; обозначить
-				<b><i>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></i></b> и
-				<b><i>y<sub>k</sub> = &nabla; &fnof;<sub>k+1</sub> - &nabla; &fnof;<sub>k</sub></i></b><br>
+				s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и
+				y<sub>k</sub> = &nabla; &fnof;<sub>k+1</sub> - &nabla; &fnof;<sub>k</sub><br>
 				&nbsp;&nbsp; вычислить
-				<b><i>C<sub>k+1</sub></i></b><br>
-				&nbsp;&nbsp; <b><i>k = k + 1</i></b><br>
-				<b>end</b>
+				C<sub>k+1</sub><br>
+				&nbsp;&nbsp; k = k + 1<br>
+				end
 			</div>
 			<p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</p>
 			<p>
-				<i>CRC16/32</i> - алгоритм нахождения контрольной суммы, 
+				CRC16/32 - алгоритм нахождения контрольной суммы, 
 				предназначенный для проверки целостности данных
 			</p>
 			<p>
-				<i>md5</i> - 128-битный алгоритм хеширования. Предназначен для создания «отпечатков»
+				md5 - 128-битный алгоритм хеширования. Предназначен для создания «отпечатков»
 				или дайджестов сообщения произвольной длины и последующей проверки
 				их подлинности.
 			</p>
@@ -250,7 +252,7 @@
 		</section>
 	</main>
 	<footer>
-		<i>&copy; Яндекс, help@yandex.ru, Хохрякова, 10</i>
+		&copy; Яндекс, help@yandex.ru, Хохрякова, 10
 	</footer>
 </body>
 </html>
