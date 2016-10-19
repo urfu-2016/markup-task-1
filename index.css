@@ -1,0 +1,62 @@
+body
+{
+    margin: 0;
+}
+
+main
+{
+    color: #252525;
+    font: 14px/22px sans-serif;
+}
+
+footer
+{
+    background-color: #222;
+    color: #fff;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+table,
+th,
+td
+{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+hr
+{
+    margin: 15px;
+}
+
+.content
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.red_symbol
+{
+    color: #f00;
+}
+
+.pre_header
+{
+    color: #aaa;
+    font-size: 12px;
+}
+
+.header
+{
+    font: 22px sans-serif;
+}
+
+.contacts
+{
+    margin-top: 40px;
+}
