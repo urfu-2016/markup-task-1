@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>ЯНДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</title>
+    <title>Блог компании Яндекс</title>
 </head>
 <body>
 <header>Блог компании Яндекс.</header>
@@ -17,23 +17,23 @@
             и новая логика. Всё это напрямую влияет на скорость работы интерфейса.
         </p>
             <h2>Что мы измеряем</h2>
-				<h3>Этапы первой загрузки:</h3>
-				<ul>
-					<li>подготовка;</li>
-					<li>загрузка статики (HTTP-запрос и парсинг);</li>
-					<li>исполнение модулей;</li>
-					<li>инициализация базовых объектов;</li>
-					<li>отрисовка.</li>
-				</ul>
-				<h3>
-					Этапы отрисовки любой страницы:
-				</h3>
-				<ul>
-					<li>подготовка к запросу на сервер;</li>
-					<li>запрос данных с сервера;</li>
-					<li>шаблонизация;</li>
-					<li>обновление DOM.</li>
-				</ul>
+                <h3>Этапы первой загрузки:</h3>
+                <ul>
+                    <li>подготовка;</li>
+                    <li>загрузка статики (HTTP-запрос и парсинг);</li>
+                    <li>исполнение модулей;</li>
+                    <li>инициализация базовых объектов;</li>
+                    <li>отрисовка.</li>
+                </ul>
+                <h3>
+                    Этапы отрисовки любой страницы:
+                </h3>
+                <ul>
+                    <li>подготовка к запросу на сервер;</li>
+                    <li>запрос данных с сервера;</li>
+                    <li>шаблонизация;</li>
+                    <li>обновление DOM.</li>
+                </ul>
         <p>
             — <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы<br>
             — <q>Что же дальше?</q> - вопрошаете вы<br>
@@ -111,7 +111,8 @@
         <p>
             На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
             <a href="https://www.rfc-editor.org/rfc/rfc3229.txt">RFC 3229 «Delta encoding in HTTP»</a>
-            и <a href="https://en.wikipedia.org/wiki/Secure_Digital">«Google SDHC»</a>, — но по разным причинам они
+            и <a href="https://en.wikipedia.org/wiki/Secure_Digital">«Google SDHC»</a>,
+			— но по разным причинам они
             не получили должного распространения в браузерах и на серверах.
         </p>
         <p>
@@ -184,7 +185,8 @@
             <var>k</var>&nbsp;=&nbsp;0<br>
             <strong>while</strong>&nbsp;||&nabla;f<sub>k</sub>||&gt;&epsilon;<br>
             &nbsp;&nbsp;найти направление p<sub>k</sub>=&minus;C<sub>k</sub>&nabla;f<sub>k</sub><br>
-            &nbsp;&nbsp;вычислить x<sub>k+1</sub>=x<sub>k</sub>&plus;&alpha;<sub>k</sub>p<sub>k</sub>,&alpha;<sub>k</sub>
+            &nbsp;&nbsp;вычислить x<sub>k+1</sub>=x<sub>k</sub>&plus;&alpha;<sub>k</sub>p<sub>k</sub>,
+			&alpha;<sub>k</sub>
             удовлетворяет условиям Вольфе<br>
             &nbsp;&nbsp;обозначить s<sub>k</sub>=x<sub>k+1</sub>-x<sub>k</sub>
             и y<sub>k</sub>=&nabla;f<sub>k+1</sub>-&nabla;f<sub>k</sub><br>
@@ -242,7 +244,8 @@
     <section>
         <h2>Комментарии</h2>
         <p>
-            Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) 30 ноября 2014 в 17:05<br>
+            Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>
+			) 30 ноября 2014 в 17:05<br>
             А можете привести сравнение, на сколько быстрее грузится lite версия?
         </p>
         <p>
@@ -260,10 +263,12 @@
         <p>
             alexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>) 22 ноября 2014 в 17:35<br>
             Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
-            <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
+            <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">
+			help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
         </p>
     </section>
 </main>
-<footer>&copy; Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>, <address>Хохрякова, 10</address></footer>
+<footer>&copy; Яндекс, <a href="mailto:help@yandex.ru">help@yandex.ru</a>,
+<address>Хохрякова, 10</address></footer>
 </body>
 </html>
