@@ -1,34 +1,41 @@
 .tab
 {
     border: 1px solid black;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
 td
 {
     border: 1px solid black;
 }
+
 th
 {
     border: 1px solid black;
 }
+
 .left
 {
     border-left: 1px solid black;
 }
+
 .tab2
 {
     border: none;
-    border-collapse: collapse
+    border-collapse: collapse;
 }
+
 .tab2 td
 {
     border: none;
     border-right: 1px solid black;
 }
+
 .tab2 td:last-child
 {
     border: none;
 }
+
 div
 {
     padding-bottom: 15px;
