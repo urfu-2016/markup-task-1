@@ -105,6 +105,11 @@ footer > div
     padding-left: 10px;
 }
 
+table
+{
+    border-spacing: 0;
+}
+
 table td
 {
     padding: 8px 16px;
