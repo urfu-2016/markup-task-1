@@ -1,0 +1,100 @@
+body
+{
+    margin: 0;
+    font-family: 'Lucida Sans Unicode';
+    font-style: normal;
+}
+
+.ya
+{
+    color: red;
+}
+
+section
+{
+    margin: 0;
+}
+
+table
+{
+    margin: 20px 0 30px 27%;
+    text-align: center;
+}
+
+th
+{
+    width: 200px;
+    border-bottom: 3px solid #000;
+}
+
+header
+{
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    float: none;
+    background-color: #ffdb4c;
+}
+
+header .top-text
+{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+main
+{
+    padding-left: 10px;
+    width: 80%;
+}
+
+aside
+{
+    background: #f0f0f0;
+    padding: 10px;
+    width: 17.8%;
+    right: 0;
+    position: absolute;
+}
+
+aside p
+{
+    margin: 0 0 10px;
+}
+
+pre
+{
+    padding-left: 6%;
+}
+
+.quote
+{
+    background-color: #ddd;
+    padding: 9px 32px;
+}
+
+.posts article
+{
+    margin: 6px 30px 6px 0;
+    padding: 3px 6px;
+    border: 1px dotted #000;
+}
+
+.posts li
+{
+    list-style: none;
+}
+
+.posts footer
+{
+    height: 50px;
+    width: 100%;
+    background-color: #d7d7d7;
+    color: #74706b;
+    text-align: center;
+}
+
+.posts footer p
+{
+    padding-top: 12px;
+}

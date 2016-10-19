@@ -3,116 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Яндекс.Блог</title>
-        <style>
-            body
-            {
-                margin: 0px;
-                font-family: "Lucida Sans Unicode";
-                font-style: normal;
-            }
-
-            .ya
-            {
-                color: red;
-            }
-
-            section
-            {
-                margin: 0px 0px 0px 0px;
-            }
-
-            table
-            {
-                margin: 20px 0px 30px 27%;
-                text-align: center;
-            }
-
-            th
-            {
-                width: 200px;
-                border-bottom: 3px solid #000000;
-            }
-
-            header
-            {
-                margin: 0 auto;
-                padding-top: 2px;
-                padding-bottom: 10px;
-                float: none;
-                background-color: #FFDB4C;
-            }
-
-            header .top-text
-            {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
-
-            main
-            {
-                padding-left: 10px;
-                width: 80%;
-            }
-
-            aside
-            {
-                background: #F0F0F0;
-                padding: 10px;
-                width: 17.8%;
-                float: right;
-                right: 0px;
-                position: absolute;
-            }
-
-            aside p
-            {
-                margin: 0px 0px 10px 0px;
-            }
-
-            pre
-            {
-                padding-left: 6%;
-            }
-
-            .quote
-            {
-                background-color: #DDDDDD;
-                padding: 9px 32px 9px 32px;
-            }
-
-            .posts article
-            {
-                margin: 6px 30px 6px 0px;
-                padding: 3px 6px 3px 6px;
-                border: 1px dotted #000000;
-            }
-
-            .posts li
-            {
-                list-style: none;
-            }
-
-            .posts footer
-            {
-                height: 50px;
-                width: 100%;
-                background-color: #D7D7D7;
-                color: #74706B;
-                text-align: center;
-            }
-
-            .posts footer p
-            {
-                padding-top: 12px;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <header>
-            <hgroup class="top-text">
-                <h1>Блог компании <span class="ya">Я</span>ндекс.</h2>
-                <h2><span class="ya">Я</span>НДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ</h1>
-            </hgroup>
+            <h1 class="top-text">Блог компании <span class="ya">Я</span>ндекс.</h1>
+            <h2 class="top-text">
+                <span class="ya">Я</span>НДЕКС.ПОЧТА: КАК МЫ ИЗМЕРЯЕМ СКОРОСТЬ ЗАГРУЗКИ И УЛУЧШАЕМ ЕЁ
+            </h2>
             <p class="top-text">
                 Если ваш сайт медленно грузится, вы рискуете тем, что люди не оценят ни то,
                 какой он красивый, ни то, какой он удобный. Никому не понравится, когда все
@@ -129,12 +27,16 @@
                 <p>Компания: Яндекс</p>
             </address>
         </aside>
-        <main>  
+        <main>
             <h3>Что мы измеряем</h3>
             <p>Этапы первой загрузки:</p>
             <ul>
                 <li>подготовка;</li>
-                <li>загрузка статики (<abbr title="Hypertext Transfer Protocol">HTTP</abbr>-запрос и парсинг);</li>
+                <li>
+                    загрузка статики (
+                    <abbr title="Hypertext Transfer Protocol">HTTP</abbr>
+                    -запрос и парсинг);
+                </li>
                 <li>исполнение модулей;</li>
                 <li>инициализация базовых объектов;</li>
                 <li>отрисовка.</li>
@@ -154,7 +56,8 @@
             </blockquote>
             <p>
                 Как вы знаете, <dfn>медиана</dfn> – это серединное, а не среднее значение в выборке.
-                Если у нас имеются числа <var>1, 2, 2, 3, 8, 10, 20</var>, то медиана – <var>3</var>, а среднее – <var>6,5</var>.
+                Если у нас имеются числа <var>1, 2, 2, 3, 8, 10, 20</var>, то медиана – <var>3</var>
+                , а среднее – <var>6,5</var>.
                 В общем случае медиана отлично показывает, сколько грузится средний пользователь.
             </p>
             <p>
@@ -162,7 +65,8 @@
                 рассказать, сколько пользователей ускорилось, а сколько замедлилось.
             </p>
             <p>
-                <abbr title="Application Performance Index"><dfn>APDEX</dfn></abbr> – метрика, которая сразу говорит: хорошо или плохо. Метрика
+                <abbr title="Application Performance Index"><dfn>APDEX</dfn></abbr>
+                 – метрика, которая сразу говорит: хорошо или плохо. Метрика
                 работает очень просто. Мы выбираем временной интервал <var>[0; t]</var>, такой, что если
                 время показа страницы попало в него, то пользователь счастлив. Берем еще один
                 интервал, <var>(t; 4t]</var> (в четыре раза больше первого), и считаем, что если страница
@@ -170,7 +74,8 @@
                 но уже не настолько счастлив. И применяем формулу:
             </p>
             <p>
-                (<var>кол-во счастливых пользователей</var> + <var>кол-во удовлетворенных</var> / <var>2</var>) / (<var>кол-во всех</var>).
+                (<var>кол-во счастливых пользователей</var> + <var>кол-во удовлетворенных</var> 
+                / <var>2</var>) / (<var>кол-во всех</var>).
                 Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
                 хорошо или плохо работает почта.
             </p>
@@ -195,7 +100,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
             </code></pre>
             <p>И на сервер прилетают подобные записи:</p>
             <pre><code>
-serverResponse=50&domUpdate=60
+serverResponse=50&amp;domUpdate=60
             </code></pre>
             <hr>
             <h3>Как мы ускоряем</h3>
@@ -204,9 +109,12 @@ serverResponse=50&domUpdate=60
                 мы уже делаем следующее:
             </p>
             <ul>
-                <li>включаем <abbr title="GNU Zip">gzip;</li>
+                <li>включаем <abbr title="GNU Zip">gzip</abbr>;</li>
                 <li>выставляем заголовки кэширования;</li>
-                <li>фризим <abbr title="Cascading Style Sheet">CSS, <abbr title="JavaScript">JS</abbr>, шаблоны и картинки;</li>
+                <li>
+                    фризим <abbr title="Cascading Style Sheet">CSS</abbr>, 
+                    <abbr title="JavaScript">JS</abbr>, шаблоны и картинки;
+                </li>
                 <li>используем <abbr title="Content Delivery Network">CDN</abbr>;</li>
             </ul>
             <p>
@@ -216,7 +124,8 @@ serverResponse=50&domUpdate=60
             </p>
             <p>
                 На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
-                <cite><abbr title="Request for Comments">RFC</abbr> 3229 «Delta encoding in HTTP»</cite> и <cite>«Google SDHC»</cite>, — но по разным причинам они
+                <cite><abbr title="Request for Comments">RFC</abbr> 3229 «Delta encoding in HTTP»</cite> 
+                и <cite>«Google SDHC»</cite>, — но по разным причинам они
                 не получили должного распространения в браузерах и на серверах.
             </p>
             <p>
@@ -230,23 +139,21 @@ serverResponse=50&domUpdate=60
             </ul>
             <p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
             <table>
-                <thead>
+                <tr>
                     <th>Библиотека</th>
                     <th><abbr title="Internet Explorer">IE</abbr> 9</th>
                     <th>Opera 12</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>vcdiff</td>
-                        <td>8</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>google diff</td>
-                        <td>1363</td>
-                        <td>76</td>
-                    </tr>
-                </tbody>
+                </tr>
+                <tr>
+                    <td>vcdiff</td>
+                    <td>8</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>google diff</td>
+                    <td>1363</td>
+                    <td>76</td>
+                </tr>
             </table>
             <p>
                 После того как мы определились с библиотекой для диффа, нужно определиться с тем,
@@ -271,47 +178,66 @@ serverResponse=50&domUpdate=60
             <br>
             <p>
                 То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
-                каждого объекта есть три свойства. <var>k</var> — названия ключа в <var>localStorage</var> для этого
-                ресурса. <var>p</var> — патч для ресурса, который сгенерировал <var>vcdiff</var>. <var>s</var> — чексумма для
+                каждого объекта есть три свойства. <var>k</var> — названия ключа в <var>localStorage</var> 
+                для этого ресурса. <var>p</var> — патч для ресурса, который сгенерировал <var>vcdiff</var>. 
+                <var>s</var> — чексумма для
                 ресурса актуальной версии, чтобы потом можно было проверить правильность
                 наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
             </p>
             <pre>
-                <math><mrow><mtext>дано </mtext>&epsilon;<mo>,</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></math>
-                <math><mrow><mtext>инициализировать </mtext><msub><mi>H</mi><mn>0</mn></mrow></math>
+                <math>
+                    <mtext>дано &epsilon;</mtext><mrow><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub></mrow>
+                </math>
+                <math>
+                    <mtext>инициализировать&nbsp;</mtext><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow>
+                </math>
                 <math><mrow><mi>k</mi><mo>=</mo><mi>0</mi></mrow></math>
                 <math>
                     <mrow>
-                        <mtext mathvariant="bold">while </mtext>||&nabla;<msub><mi>f</mi><mn>k</mn></msub>||<mo>&gt; &epsilon;</mo>
+                        <mtext mathvariant="bold">while ||&nabla;</mtext>
+                        <msub><mi>f</mi><mn>k</mn></msub><mo>||</mo><mo>&gt; &epsilon;</mo>
                     </mrow>
                 </math>
                 <math>
-                    <mspace width="19px" />
+                    <mspace width="19px"></mspace>
                     <mrow>
-                        <mtext>найти направление </mtext><msub><mi>p</mi><mn>k</mn></msub><mo>=</mo>
-                        <mo>-</mo><msub><mi>C</mi><mn>k</mn></msub>&nabla;<msub><mi>f</mi><mn>k</mn></msub>
+                        <mtext>найти направление&nbsp;</mtext><msub><mi>p</mi><mn>k</mn></msub><mo>=</mo>
+                        <mo>-</mo><msub><mi>C</mi><mn>k</mn></msub><mo>&nabla;</mo>
+                        <msub><mi>f</mi><mn>k</mn></msub>
                     </mrow>
                 </math>
                 <math>
-                    <mspace width="19px" />
+                    <mspace width="19px"></mspace>
                     <mrow>
-                        <mtext>вычислить </mtext><msub><mi>x</mi><mn>k+1</mn></msub><mo>=</mo>
+                        <mtext>вычислить&nbsp;</mtext><msub><mi>x</mi><mn>k+1</mn></msub><mo>=</mo>
                         <msub><mi>x</mi><mn>k</mn></msub><mo>+</mo><msub><mi>&alpha;</mi><mn>k</mn></msub>
                         <msub><mi>p</mi><mn>k</mn></msub><mo>,</mo><msub><mi>&alpha;</mi><mn>k</mn></msub>
-                        <mtext> удовлетворяет условиям Вольфе</mtext>
+                        <mtext>&nbsp;удовлетворяет условиям Вольфе</mtext>
                     </mrow>
                 </math>
                 <math>
-                    <mspace width="19px" />
+                    <mspace width="19px"></mspace>
                     <mrow>
-                        <mtext>обозначить </mtext><msub><mi>s</mi><mn>k</mn></msub><mo>=</mo>
+                        <mtext>обозначить&nbsp;</mtext><msub><mi>s</mi><mn>k</mn></msub><mo>=</mo>
                         <msub><mi>x</mi><mn>k+1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>k</mn></msub>
-                        <mtext> и </mtext><msub><mi>y</mi><mn>k</mn></msub><mo>=</mo>&nabla;<msub><mi>f</mi><mn>k+1</mn></msub>
-                        <mo>-</mo>&nabla;<msub><mi>f</mi><mn>k</mn></msub>
+                        <mtext>&nbsp;и&nbsp;</mtext>
+                        <msub><mi>y</mi><mn>k</mn></msub><mo>=</mo><mi>&nabla;</mi>
+                        <msub><mi>f</mi><mn>k+1</mn></msub>
+                        <mo>-</mo><mi>&nabla;</mi><msub><mi>f</mi><mn>k</mn></msub>
                     </mrow>
                 </math>
-                <math><mspace width="19px" /><mrow><mtext>вычислить </mtext><msub><mi>C</mi><mn>k+1</mn></msub></mrow></math>
-                <math><mspace width="19px" /><mrow><mi>k</mi><mo>=</mo><mi>k</mi><mo>+</mo><mi>1</mi></mrow></math>
+                <math>
+                    <mspace width="19px"></mspace>
+                    <mrow>
+                        <mtext>вычислить&nbsp;</mtext><msub><mi>C</mi><mn>k+1</mn></msub>
+                    </mrow>
+                </math>
+                <math>
+                    <mspace width="19px"></mspace>
+                    <mrow>
+                        <mi>k</mi><mo>=</mo><mi>k</mi><mo>+</mo><mi>1</mi>
+                    </mrow>
+                </math>
                 <math><mtext mathvariant="bold">end</mtext></math>
             </pre>
             <p>
@@ -320,7 +246,7 @@ serverResponse=50&domUpdate=60
                 нахождения локального максимума/минимума нелинейного функционала
                 без ограничений.
             </p>
-            <p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:
+            <p>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</p>
             <dl>
                 <dt>CRC16/32</dt>
                 <dd>алгоритм нахождения контрольной суммы, предназначенный для проверки
@@ -328,35 +254,33 @@ serverResponse=50&domUpdate=60
                 <dt>md5</dt>
                 <dd>128-битный алгоритм хеширования. Предназначен для создания «отпечатков»
                 или дайджестов сообщения произвольной длины и последующей проверки
-                их подлинности.</dd></p>
+                их подлинности.</dd>
             </dl>
             <p>Потому что он быстрый, компактный и легок в реализации.</p>
             <hr>
             <h3>Итог</h3>
             <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
             <table>
-                <thead>
+                <tr>
                     <th>Релиз</th>
                     <th>С патчем</th>
                     <th>Без патча</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>7.7.20</td>
-                        <td>397</td>
-                        <td>174 549</td>
-                    </tr>
-                    <tr>
-                        <td>7.7.21</td>
-                        <td>383</td>
-                        <td>53 995</td>
-                    </tr>
-                    <tr>
-                        <td>7.7.22</td>
-                        <td>483</td>
-                        <td>3 995</td>
-                    </tr>
-                </tbody>
+                </tr>
+                <tr>
+                    <td>7.7.20</td>
+                    <td>397</td>
+                    <td>174 549</td>
+                </tr>
+                <tr>
+                    <td>7.7.21</td>
+                    <td>383</td>
+                    <td>53 995</td>
+                </tr>
+                <tr>
+                    <td>7.7.22</td>
+                    <td>483</td>
+                    <td>3 995</td>
+                </tr>
             </table>
         </main>
         <footer></footer>
@@ -368,13 +292,21 @@ serverResponse=50&domUpdate=60
             <ul>
                 <li>
                     <article>
-                        <cite>Mogaika</cite> (<a href="mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) <time>30 ноября 2014 в 17:05</time>
+                        <h4>
+                            <cite>Mogaika</cite> (
+                            <a href="mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>
+                            ) 30 ноября 2014 в 17:05
+                        </h4>
                         <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <cite>JIguse</cite> (<a href="mrawesome@yandex.ru">mrawesome@yandex.ru</a>) <time>29 ноября 2014 в 21:30</time>
+                        <h4>
+                            <cite>JIguse</cite> (
+                            <a href="mrawesome@yandex.ru">mrawesome@yandex.ru</a>
+                            ) 29 ноября 2014 в 21:30
+                        </h4>
                         <p>
                             Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
                             подробностями о внутренней работе сервисов.
@@ -383,26 +315,36 @@ serverResponse=50&domUpdate=60
                 </li>
                 <li>
                     <article>
-                        <cite>Brister</cite> (<a href="brist89@yandex-team.ru">brist89@yandex-team.ru</a>) <time>24 ноября 2014 в 13:13</time>
-                         <blockquote class="quote">
-                             (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
-                             Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
-                             хорошо или плохо работает почта.
-                         </blockquote>
-                         <p>наверное все-таки от 0.5 до 1</p>
+                        <h4>
+                            <cite>Brister</cite> (
+                            <a href="brist89@yandex-team.ru">brist89@yandex-team.ru</a>
+                            ) 24 ноября 2014 в 13:13
+                        </h4>
+                        <blockquote class="quote">
+                            (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
+                            Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
+                            хорошо или плохо работает почта.
+                        </blockquote>
+                        <p>наверное все-таки от 0.5 до 1</p>
                     </article>
                 </li>
                 <li>
                     <article>
-                        <cite>alexeimois</cite> (<a href="test@yandex.ru">test@yandex.ru</a>) <time>22 ноября 2014 в 17:35</time>
+                        <h4>
+                            <cite>alexeimois</cite> (
+                            <a href="test@yandex.ru">test@yandex.ru</a>
+                            ) 22 ноября 2014 в 17:35
+                        </h4>
                         <p>Мы измеряем скорость загрузки с помощью Яндекс.Метрики:</p>
-                        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
+                        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">
+                            help.yandex.ru/metrika/reports/monitoring_timing.xml
+                        </a>
                     </article>
                 </li>
             </ul>
             <footer>
                 <address>
-                    <p>&copy; Яндекс, <a href="mailto: help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10</p>
+                    <p>&copy; Яндекс, <a href="help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10</p>
                 </address>
             </footer>
         </section>
