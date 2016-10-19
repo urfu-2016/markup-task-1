@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+}
+
+li:before {
+    content: "*";
+}
+
+table {
+    text-align: center;
+    border: 1px;
+    width: 400px;
+}
