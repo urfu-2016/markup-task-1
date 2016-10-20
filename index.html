@@ -81,7 +81,7 @@
                         </code>
                     </pre>
                     <p>И на сервер прилетают подобные записи:</p>
-                    <samp>serverResponse=50&domUpdate=60</samp>
+                    <pre>serverResponse=50&domUpdate=60</pre>
                 </figure>
                 <figure>
                     <figcaption><h2>Как мы ускоряем</h2></figcaption>
@@ -166,10 +166,15 @@
                                 дано <var>ε, x<sub>0</sub></var>
                                 инициализировать <var>H<sub>0</sub></var>
                                 <var>k = 0</var>
-                                <code><strong>while</strong> ||∇<var>f<sub>k</sub></var>|| &gt; <var>ε</var></code>
-                                    найти направление <var>p<sub>k</sub> = -C<sub>k</sub> ∇ f<sub>k</sub></var>
-                                    вычислить <var>x<sub>k+1</sub> = x<sub>k</sub> + α<sub>k</sub>p<sub>k</sub>, α<sub>k</sub></var> удволетворяет условиям Вольфе
-                                    обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></var> и <var>y<sub>k</sub> = ∇ f<sub>k+1</sub> - ∇ f<sub>k</sub></var>
+                                <code><strong>while</strong>
+                                ||∇<var>f<sub>k</sub></var>|| &gt; <var>ε</var></code>
+                                    найти направление <var>p<sub>k</sub> = 
+                                    = -C<sub>k</sub> ∇ f<sub>k</sub></var>
+                                    вычислить <var>x<sub>k+1</sub> =
+                                     = x<sub>k</sub> + α<sub>k</sub>p<sub>k</sub>,
+                                     α<sub>k</sub></var> удволетворяет условиям Вольфе
+                                    обозначить <var>s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub></var>
+                                    и <var>y<sub>k</sub> = ∇ f<sub>k+1</sub> - ∇ f<sub>k</sub></var>
                                     вычислить <var>C<sub>k+1</sub></var>
                                     <var>k = k + 1</var>
                                 <code><strong>end</strong></code>
@@ -177,9 +182,10 @@
                         </aside>
                         <section>
                             <h4>Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:</h4>
-                            <dfn>CRC16/32</dfn> - алгоритм нахождения контрольной суммы, предназначенный для проверки
-                            целостности данных
-                            <dfn>md5</dfn> - 128-битный алгоритм хеширования. Предназначен для создания <q>отпечатков</q>
+                            <dfn>CRC16/32</dfn> - алгоритм нахождения контрольной суммы,
+                            предназначенный для проверки целостности данных
+                            <dfn>md5</dfn> - 128-битный алгоритм хеширования. 
+                            Предназначен для создания <q>отпечатков</q>
                             или дайджестов сообщения произвольной длины и последующей проверки
                             их подлинности.
                         </section>
@@ -222,7 +228,8 @@
                     <ul>
                         <li>Автор: @doochik</li>
                         <li>С++ разработик</li>
-                        <li>Электронная почта: <a href="mailto:doochik@yandex-team.ru">(doochik@yandex-team.ru)</a></li>
+                        <li>Электронная почта:
+                            <a href="mailto:doochik@yandex-team.ru">(doochik@yandex-team.ru)</a></li>
                         <li>Компания: Яндекс</li>
                     </ul>
                     </div>
@@ -231,25 +238,31 @@
         <section>      
             <h3>Комментарии (3):</h3>
             <article>
-                <h4>- Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) 30 ноября 2014 в 17:05</h4>
+                <h4>- Mogaika (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>)
+                30 ноября 2014 в 17:05</h4>
                 <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
             </article>
             <article>
-                <h4>- JIguse (<a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>) 29 ноября 2014 в 21:30</h4>
+                <h4>- JIguse (<a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>)
+                29 ноября 2014 в 21:30</h4>
                 <p>Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
                 подробностями о внутренней работе сервисов.</p>
             </article>
             <article>
-                <h4>- Brister (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>) 24 ноября 2014 в 13:13</h4>
-                <p><strong>(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех)</strong>.
+                <h4>- Brister (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>)
+                24 ноября 2014 в 13:13</h4>
+                <p><strong>(кол-во счастливых пользователей + кол-во удовлетворенных / 2)
+                    / (кол-во всех)</strong>.
                 Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
                 хорошо или плохо работает почта. <br>
                 наверное все-таки от 0.5 до 1</p>
             </article>
             <article>
-                <h4>- alexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>) 22 ноября 2014 в 17:35</h4>
+                <h4>- alexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>)
+                22 ноября 2014 в 17:35</h4>
                 <p>Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
-                <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a></p>
+                <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">
+                help.yandex.ru/metrika/reports/monitoring_timing.xml</a></p>
             </article>
             <footer>
                 <address>
