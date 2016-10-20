@@ -1,0 +1,30 @@
+article 
+{
+    background-color: mintcream;
+
+}
+
+pre,
+.figure-body 
+{
+    background-color: oldlace;
+
+}
+
+figure p
+{
+    font-family: 'Trebuchet MS';
+    line-height: .6rem;
+}
+
+h2,
+h3,
+h4 
+{
+    text-align: center;
+}
+
+.while-body 
+{
+    padding-left: 2rem;
+}
