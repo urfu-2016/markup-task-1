@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Блог компании Яндекс</title>
-    <style type="text/css">
-        div {
-            background-color: #ccc;
-        }
-        table {
-            border-collapse: collapse;
-        }
-        td {
-            border: 1px solid #000;
-        }
-    </style>
-    <meta charset="utf-8">
+<title>Блог компании Яндекс</title>
+<meta charset="utf-8">
 </head>
 
 <body>
@@ -125,7 +114,7 @@ RFC 3229 &laquo;Delta encoding in HTTP&raquo; и &laquo;Google SDHC&raquo;, — 
 <li>google-diff-patch-match</li>
 </ul>
 <p>Для окончательного выбора библиотеки нам нужно сравнить:</p>
-<table>
+<table style='border-collapse: collapse;' border='1'>
 <tr>
 <td>Библиотека</td>
 <td>IE 9</td>
@@ -179,8 +168,10 @@ RFC 3229 &laquo;Delta encoding in HTTP&raquo; и &laquo;Google SDHC&raquo;, — 
 k = 0
 while || &nabla;f<sub>k</sub> || &gt;&epsilon;
     найти направление p<sub>k</sub> = -C<sub>k</sub>&nabla;f<sub>k</sub>
-    вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>p<sub>k</sub>, &alpha;<sub>k</sub> удовлетворяет условиям Вольфе
-    обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> = &nabla;f<sub>k+1</sub> - &nabla;f<sub>k</sub>
+    вычислить x<sub>k+1</sub> = x<sub>k</sub> + &alpha;<sub>k</sub>p<sub>k</sub>,
+&alpha;<sub>k</sub> удовлетворяет условиям Вольфе
+    обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> =
+&nabla;f<sub>k+1</sub> - &nabla;f<sub>k</sub>
     вычислить C<sub>k+1</sub>
     k = k + 1
 end
@@ -197,7 +188,7 @@ md5 - 128-битный алгоритм хеширования. Предназн
 
 <h4>Итог</h4>
 <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статитки в байтах:</p>
-<table>
+<table style='border-collapse: collapse;' border='1'>
 <tr>
 <th>Релиз</th>
 <th>С патчем</th>
@@ -238,14 +229,16 @@ md5 - 128-битный алгоритм хеширования. Предназн
 <article>
 - JIguse (<a href="mailto:mrawesome@yandex.ru">mrawesome@yandex.ru</a>) 29 ноября 2014 в 21:30
 <blockquote>
-<p>Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми подробностями о внутренней работе сервисов.</p>
+<p>Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми подробностями о
+внутренней работе сервисов.</p>
 </blockquote>
 </article>
 <article>
 - Brister (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>) 24 ноября 2014 в 13:13
 <blockquote>
 <p>(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
-Получается значение от нуля до единицы, которое, видимо, лучше всего показывает, хорошо или плохо работает почта.</p>
+Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
+хорошо или плохо работает почта.</p>
 <p>наверное все-таки от 0.5 до 1</p>
 </blockquote>
 </article>
