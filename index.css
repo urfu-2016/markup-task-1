@@ -1,18 +1,20 @@
 article 
 {
-    background-color: mintcream; 
+    background-color: mintcream;
+
 }
 
 pre,
 .figure-body 
 {
-    background-color: oldlace;  
+    background-color: oldlace;
+
 }
 
-figure p 
+figure p
 {
     font-family: 'Trebuchet MS';
-    line-height: 0.6rem;
+    line-height: .6rem;
 }
 
 h2,
